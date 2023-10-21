@@ -5,25 +5,39 @@ from deep_translator import GoogleTranslator
 import datetime
 import os
 
+VERSION = "0.0.1"
+
 GITHUB_NAME = ""
 OUTPUT_FILE = ""
 TIMESTAMP_FILE = ""
+LOG_FILE = ""
+LOG_LENGTH = -1
 QUIETLY = False
-
-VERSION = "0.0.1"
+PROJECT_META_FILES = []
 
 projects = []
-
-PROJECT_META_FILES = []
+log_lines = []
+timestamp = datetime.datetime.now()
 
 
 def main():
     set_args()
     print_intro()
+    read_log()
 
+    log("---")
     log(f"Github name: {GITHUB_NAME}")
     log(f"Output file: {OUTPUT_FILE}")
     log(f"Looking for project files: {PROJECT_META_FILES}")
+    if LOG_FILE != "":
+        log(f"Log file: {LOG_FILE}")
+        if LOG_LENGTH < 0:
+            log("Log length: unlimited")
+        else:
+            log(f"Log length: {LOG_LENGTH}")
+    else:
+        log("No log file specified!")
+
     if TIMESTAMP_FILE != "":
         log(f"Timestamp file: {TIMESTAMP_FILE}")
     else:
@@ -32,19 +46,20 @@ def main():
 
     repos = get_github_repos()
     log(f"Found {len(repos)} repos for user {GITHUB_NAME}")
+    log()
     for repo in repos:
         meta_data = get_project_file(repo)
         if meta_data == None:
             continue
 
-        project = create_project_dict(repo, meta_data)
-        projects.append(project)
+        create_project_dict(repo, meta_data)
     save_projects()
     save_timestamp()
-    log("")
-    log("Finished!")
-    log("Have a nice day :)")
-    log("by Philipp B.")
+    save_log()
+    log("", False)
+    log("Finished!", False)
+    log("Have a nice day :)", False)
+    log("by Philipp B.", False)
 
 
 def set_args():
@@ -62,6 +77,16 @@ def set_args():
             PROJECT_META_FILES = sys.argv[i+1].split(",")
         elif (arg == "-read" or arg == "-r") and i+1 < len(sys.argv):
             conf_file = sys.argv[i+1]
+        elif (arg == "-logfile" or arg == "-lf") and i+1 < len(sys.argv):
+            global LOG_FILE
+            LOG_FILE = sys.argv[i+1]
+        elif (arg == "-loglength" or arg == "-ll") and i+1 < len(sys.argv):
+            global LOG_LENGTH
+            try:
+                LOG_LENGTH = int(sys.argv[i+1])
+            except Exception:
+                print("Error: Log length must be an integer!")
+                sys.exit(1)
         elif (arg == "-quiet" or arg == "-q"):
             global QUIETLY
             QUIETLY = True
@@ -98,6 +123,14 @@ def set_args():
             PROJECT_META_FILES = data["project_files"].split(",")
         if data.get("timestamp"):
             TIMESTAMP_FILE = data["timestamp"]
+        if data.get("log_file"):
+            LOG_FILE = data["log_file"]
+        if data.get("log_length"):
+            try:
+                LOG_LENGTH = int(data["log_length"])
+            except Exception:
+                print("Error: Log length must be an integer!")
+                sys.exit(1)
 
     # check if all required arguments are set
     if GITHUB_NAME == "":
@@ -161,7 +194,11 @@ def create_project_dict(repo, meta_data):
         project["version"] = meta_data["version"]
     else:
         project["version"] = ""
-    return project
+    if not meta_data.get("ignore"):
+        projects.append(project)
+    else:
+        log(f"Ignoring project {name}")
+    log()
 
 
 def convert_conf_file(txt):
@@ -206,20 +243,46 @@ def save_projects():
         # write as utf-8
 
         json.dump(projects, outfile, indent=4, ensure_ascii=False)
-    log("Done!")
+    log("Done!", False)
 
 
 def save_timestamp():
-    timestamp = datetime.datetime.now()
     with open(TIMESTAMP_FILE, "w") as outfile:
         # write timestamp to file
         outfile.write(f"{str(timestamp)}\n")
     log("Timestamp: " + str(timestamp))
 
 
-def log(txt=""):
+def read_log():
+    if LOG_FILE == "":
+        return
+    try:
+        with open(LOG_FILE, "r") as infile:
+            for line in infile.readlines():
+                log_lines.append(line.strip())
+    except Exception:
+        log("Could not read log file!", False)
+
+
+def save_log():
+    if LOG_FILE == "":
+        return
+    try:
+        with open(LOG_FILE, "w") as outfile:
+            for line in log_lines:
+                outfile.write(line + "\n")
+    except Exception:
+        log("Could not save log file!", False)
+
+
+def log(txt="", to_file=True):
     if not QUIETLY:
         print(txt)
+    if LOG_FILE != "" and to_file and txt != "":
+        log_lines.append(f"[{str(timestamp)}] {txt}")
+        if LOG_LENGTH > 0 and len(log_lines) > LOG_LENGTH:
+            while len(log_lines) > LOG_LENGTH:
+                log_lines.pop(0)
 
 
 def print_help():

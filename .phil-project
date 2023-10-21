@@ -1,6 +1,8 @@
 # This is a project
 
-ignore
+# ignore
+
 logo:assets/logo.png
 logo_small:assets/logo_small.png
 description_translate:de
+version:0.0.1

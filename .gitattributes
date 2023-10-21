@@ -3,3 +3,4 @@
 .conf export-ignore
 projects.json export-ignore
 timestamp.txt export-ignore
+.log export-ignore

@@ -3,7 +3,7 @@
   <img src="assets/logo.png" alt=".project-providerLogo" width="50%"/>
   <!-- <h1>.project-provider</h1> -->
   <p>
-    Project management tool for my projects.
+    Project management tool for your Github projects
   </p>
 </div>
 

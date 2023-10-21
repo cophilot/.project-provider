@@ -1,26 +1,5 @@
 [
     {
-        "name": ".phil-projects",
-        "branch": "main",
-        "url": "https://github.com/phil1436/.phil-projects",
-        "homepage": "",
-        "topics": [
-            "ci-cd",
-            "github",
-            "github-actions",
-            "github-api",
-            "management",
-            "project",
-            "python"
-        ],
-        "stars": 0,
-        "description": "Project management tool for my projects.",
-        "description_de": "Projektmanagement-Tool für meine Projekte.",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/.phil-projects/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/.phil-projects/main/assets/logo_small.png",
-        "version": ""
-    },
-    {
         "name": "OrbitLab",
         "branch": "master",
         "url": "https://github.com/phil1436/OrbitLab",
