@@ -1,0 +1,20 @@
+[2023-10-21 12:40:12.284505] ---
+[2023-10-21 12:40:12.284505] Github name: phil1436
+[2023-10-21 12:40:12.284505] Output file: projects.json
+[2023-10-21 12:40:12.284505] Looking for project files: ['.phil-project', '.phil']
+[2023-10-21 12:40:12.284505] Log file: .log
+[2023-10-21 12:40:12.284505] Log length: 100
+[2023-10-21 12:40:12.284505] Timestamp file: .timestamp
+[2023-10-21 12:40:12.284505] Found 16 repos for user phil1436
+[2023-10-21 12:40:12.284505] Found project .project-provider (.phil-project)...
+[2023-10-21 12:40:12.284505] Project .project-provider has meta data: {'logo': 'assets/logo.png', 'logo_small': 'assets/logo_small.png', 'description_translate': 'de', 'version': '0.0.1'}
+[2023-10-21 12:40:12.284505] Found project OrbitLab (.phil-project)...
+[2023-10-21 12:40:12.284505] Project OrbitLab has meta data: {'logo': 'src/assets/logo.png', 'logo_small': 'src/assets/logo_small.png'}
+[2023-10-21 12:40:12.284505] Found project Petgram (.phil-project)...
+[2023-10-21 12:40:12.284505] Project Petgram has meta data: {'logo': 'src/assets/logo.png', 'logo_small': 'src/assets/logo_small.png'}
+[2023-10-21 12:40:12.284505] Found project phil-online (.phil-project)...
+[2023-10-21 12:40:12.284505] Project phil-online has meta data: {'logo': 'src/assets/logoPhilOnline.png', 'logo_small': 'src/assets/logoPhilOnline.png', 'description_translate': 'de'}
+[2023-10-21 12:40:12.284505] Found project VSToolKit (.phil)...
+[2023-10-21 12:40:12.284505] Project VSToolKit has meta data: {'logo': 'assets/logo.png', 'description_translate': 'de'}
+[2023-10-21 12:40:12.284505] Saving 5 projects to projects.json...
+[2023-10-21 12:40:12.284505] Timestamp: 2023-10-21 12:40:12.284505
