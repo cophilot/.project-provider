@@ -1,0 +1,35 @@
+name: Get Projects (SCHEDULE)
+
+on:
+    schedule:
+        # Set the schedule for when you want the workflow to run
+        # Example: Run every day at midnight (UTC)
+        - cron: '0 0 * * *'
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Check out code
+              uses: actions/checkout@v2
+
+            - name: Set up Python
+              uses: actions/setup-python@v4
+              with:
+                  python-version: '3.10'
+
+            - name: Install dependencies
+              run: |
+                  pip install -r requirements.txt
+
+            - name: Run Python script
+              run: python main.py -r .conf
+
+            - name: Commit changes
+              run: |
+                  git config user.name 'GitHub Actions'
+                  git config user.email 'actions@github.com'
+                  git add .  # This will stage all changes in the repository
+                  git commit -m "Automated data update"
+                  git push

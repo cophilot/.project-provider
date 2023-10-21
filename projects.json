@@ -1,0 +1,99 @@
+[
+    {
+        "name": ".phil-projects",
+        "branch": "main",
+        "url": "https://github.com/phil1436/.phil-projects",
+        "homepage": "",
+        "topics": [
+            "ci-cd",
+            "github",
+            "github-actions",
+            "github-api",
+            "management",
+            "project",
+            "python"
+        ],
+        "stars": 0,
+        "description": "Project management tool for my projects.",
+        "description_de": "Projektmanagement-Tool für meine Projekte.",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/.phil-projects/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/.phil-projects/main/assets/logo_small.png",
+        "version": ""
+    },
+    {
+        "name": "OrbitLab",
+        "branch": "master",
+        "url": "https://github.com/phil1436/OrbitLab",
+        "homepage": "http://orbitlab.philipp-bonin.com/",
+        "topics": [
+            "angular",
+            "astrophysics",
+            "html",
+            "physics",
+            "sass",
+            "simulation",
+            "typescript",
+            "webapp",
+            "webapplication"
+        ],
+        "stars": 0,
+        "description": "A webapplication to simulate orbits.",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/OrbitLab/master/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/OrbitLab/master/src/assets/logo_small.png",
+        "version": ""
+    },
+    {
+        "name": "Petgram",
+        "branch": "master",
+        "url": "https://github.com/phil1436/Petgram",
+        "homepage": "http://petgram.philipp-bonin.com/",
+        "topics": [
+            "angular",
+            "html",
+            "scss",
+            "social-media",
+            "typescript",
+            "webapplication",
+            "website"
+        ],
+        "stars": 0,
+        "description": "Nothing to see here, just a social media site for pets...",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/logo_small.png",
+        "version": ""
+    },
+    {
+        "name": "phil-online",
+        "branch": "master",
+        "url": "https://github.com/phil1436/phil-online",
+        "homepage": "http://philipp-bonin.com/",
+        "topics": [
+            "css",
+            "html",
+            "html-css-javascript",
+            "javascript",
+            "personal-website",
+            "webapp",
+            "website"
+        ],
+        "stars": 0,
+        "description": "Personal Website",
+        "description_de": "Persönliche Webseite",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
+        "version": ""
+    },
+    {
+        "name": "VSToolKit",
+        "branch": "main",
+        "url": "https://github.com/phil1436/VSToolKit",
+        "homepage": "",
+        "topics": [],
+        "stars": 0,
+        "description": "Providing tools for Visual Studio Code. ",
+        "description_de": "Bereitstellung von Tools für Visual Studio Code.",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
+        "logo_small_url": "",
+        "version": ""
+    }
+]

@@ -1,0 +1,5 @@
+#comment
+# file export-ignore
+.conf export-ignore
+projects.json export-ignore
+timestamp.txt export-ignore
