@@ -1,0 +1,20 @@
+# Here you can set some metadata for your project.
+
+# Write comments with a # at the beginning of the line.
+
+# The path to the logo of your project relative to the root of the project.
+# In the provider the path will be used to provide a url to the logo.
+logo:assets/logo.png
+
+# The path to a small logo of your project relative to the root of the project. 
+# In the provider the path will be used to provide a url to the logo.
+logo_small:assets/logo_small.png
+
+# You can set a description for your project in different languages (comma separated).
+description_translate:de,es
+
+# The version of your project.
+version:1.0
+
+# If you want that this project will be ignored by the provider then write 'ignore'.
+ignore

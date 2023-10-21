@@ -1,12 +1,14 @@
+# Configure this file to your needs and then save it as '.conf' file! 
+
 # Specify your github name
-Name:phil1436
+name:<your-github-name>
 # Specify the output file
-Output:projects.json
+output:projects.json
 # Specify the fil names to look for in the project (comma separated)
-Project_Files:.phil-project,.phil
+project_files:.phil-project,.phil
 # Specify the timestamp file name
-Timestamp:.timestamp
+timestamp:.timestamp
 # Specify the log file name
-Log_File:.log
+log_file:.log
 # Specify the log length
-Log_Length:100
+log_length:100

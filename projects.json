@@ -15,11 +15,33 @@
             "script"
         ],
         "stars": 0,
-        "description": "Project management tool for my projects. ",
-        "description_de": "Projektmanagement-Tool für meine Projekte.",
+        "description": " Project management tool for your Github projects",
+        "description_de": "Projektmanagement-Tool für Ihre Github-Projekte",
         "logo_url": "https://raw.githubusercontent.com/phil1436/.project-provider/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/.project-provider/main/assets/logo_small.png",
         "version": "0.0.1"
+    },
+    {
+        "name": "Color-Chicken",
+        "branch": "master",
+        "url": "https://github.com/phil1436/Color-Chicken",
+        "homepage": "http://colorchicken.philipp-bonin.com/",
+        "topics": [
+            "angular",
+            "game",
+            "html",
+            "scss",
+            "typescript",
+            "webapp",
+            "webapplication",
+            "website"
+        ],
+        "stars": 0,
+        "description": "Be a feathered chameleon, master the hurdles in Color Chicken!",
+        "description_de": "Seien Sie ein gefiedertes Chamäleon und meistern Sie die Hürden in Color Chicken!",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/Color-Chicken/master/src/assets/logo_text.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/Color-Chicken/master/src/assets/logo.png",
+        "version": ""
     },
     {
         "name": "OrbitLab",
@@ -42,6 +64,27 @@
         "logo_url": "https://raw.githubusercontent.com/phil1436/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
+    },
+    {
+        "name": "ownobjectscriptextension",
+        "branch": "master",
+        "url": "https://github.com/phil1436/ownobjectscriptextension",
+        "homepage": "https://phil1436.github.io/ownobjectscriptextension/",
+        "topics": [
+            "extension",
+            "intersystems",
+            "intersystems-objectscript",
+            "javascript",
+            "objectscript",
+            "vscode",
+            "vscode-extension"
+        ],
+        "stars": 5,
+        "description": "A Visual Studio code extension that supplies tools for InterSystems ObjectScript.",
+        "description_de": "Eine Visual Studio-Codeerweiterung, die Tools für InterSystems ObjectScript bereitstellt.",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/ownobjectscriptextension/master/resources/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/ownobjectscriptextension/master/resources/logo.png",
+        "version": "0.0.18"
     },
     {
         "name": "Petgram",
@@ -80,8 +123,33 @@
         "stars": 0,
         "description": "Personal Website",
         "description_de": "Persönliche Webseite",
+        "description_es": "Sitio web personal",
+        "description_it": "Sito web personale",
+        "description_fr": "Site Web personnel",
         "logo_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
+        "version": ""
+    },
+    {
+        "name": "phil-shell",
+        "branch": "master",
+        "url": "https://github.com/phil1436/phil-shell",
+        "homepage": "http://shell.philipp-bonin.com/",
+        "topics": [
+            "angular",
+            "html",
+            "personal",
+            "personal-website",
+            "sass",
+            "shell",
+            "typescript",
+            "website"
+        ],
+        "stars": 0,
+        "description": "A shell like personal website ",
+        "description_de": "Eine hüllenartige persönliche Website",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/phil-shell/master/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/phil-shell/master/src/assets/logo.png",
         "version": ""
     },
     {

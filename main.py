@@ -24,7 +24,27 @@ def main():
     set_args()
     print_intro()
     read_log()
+    log_props()
 
+    repos = get_github_repos()
+    log(f"Found {len(repos)} repos for user {GITHUB_NAME}")
+    log()
+    for repo in repos:
+        meta_data = get_project_file(repo)
+        if meta_data == None:
+            continue
+
+        create_project_dict(repo, meta_data)
+    save_projects()
+    save_timestamp()
+    save_log()
+    log("", False)
+    log("Finished!", False)
+    log("Have a nice day :)", False)
+    log("by Philipp B.", False)
+
+
+def log_props():
     log("---")
     log(f"Github name: {GITHUB_NAME}")
     log(f"Output file: {OUTPUT_FILE}")
@@ -43,23 +63,6 @@ def main():
     else:
         log("No timestamp file specified!")
     log()
-
-    repos = get_github_repos()
-    log(f"Found {len(repos)} repos for user {GITHUB_NAME}")
-    log()
-    for repo in repos:
-        meta_data = get_project_file(repo)
-        if meta_data == None:
-            continue
-
-        create_project_dict(repo, meta_data)
-    save_projects()
-    save_timestamp()
-    save_log()
-    log("", False)
-    log("Finished!", False)
-    log("Have a nice day :)", False)
-    log("by Philipp B.", False)
 
 
 def set_args():
@@ -163,21 +166,23 @@ def create_project_dict(repo, meta_data):
         log(f"Project {name} has no meta data")
 
     if meta_data.get("description_translate") and repo["description"] != "" and repo["description"] != None:
-        to = meta_data.get("description_translate")
-        try:
-            project["description_" + to] = GoogleTranslator(
-                source='auto', target=to).translate(repo["description"])
-        except Exception:
-            log(f"Could not translate description to {to}")
-            project["description_" + to] = ""
+        translate_list = meta_data.get("description_translate").split(",")
+        for to in translate_list:
+            try:
+                project["description_" + to] = GoogleTranslator(
+                    source='auto', target=to).translate(repo["description"])
+            except Exception:
+                log(f"Could not translate description to {to}")
+                project["description_" + to] = ""
     elif meta_data.get("translate_description") and repo["description"] != "" and repo["description"] != None:
-        to = meta_data.get("translate_description")
-        try:
-            project["description_" + to] = GoogleTranslator(
-                source='auto', target=to).translate(repo["description"])
-        except Exception:
-            log(f"Could not translate description to {to}")
-            project["description_" + to] = ""
+        translate_list = meta_data.get("translate_description").split(",")
+        for to in translate_list:
+            try:
+                project["description_" + to] = GoogleTranslator(
+                    source='auto', target=to).translate(repo["description"])
+            except Exception:
+                log(f"Could not translate description to {to}")
+                project["description_" + to] = ""
 
     if meta_data.get("logo"):
         project["logo_url"] = f"https://raw.githubusercontent.com/{GITHUB_NAME}/{name}/{branch}/" + meta_data["logo"]
@@ -207,10 +212,10 @@ def convert_conf_file(txt):
         if line == "" or line.startswith("#"):
             continue
         if not ":" in line:
-            data[line.strip()] = line.strip()
+            data[line.strip().lower()] = line.strip()
             continue
         key, value = line.split(":", 1)
-        data[key.strip()] = value.strip()
+        data[key.strip().lower()] = value.strip()
     return data
 
 

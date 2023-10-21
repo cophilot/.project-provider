@@ -2,7 +2,7 @@
 
 ---
 
-## [v0.0.1](https://github.com/phil1436/.project-provider/tree/0.0.1) (2023-10-20)
+## [v0.0.1](https://github.com/phil1436/.project-provider/tree/0.0.1) (2023-10-21)
 
 -   _Initial release_
 
