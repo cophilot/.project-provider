@@ -102,8 +102,9 @@
         ],
         "stars": 0,
         "description": "Nothing to see here, just a social media site for pets...",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/logo_small.png",
+        "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Seite für Haustiere ...",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/img/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/img/logo_small.png",
         "version": ""
     },
     {
