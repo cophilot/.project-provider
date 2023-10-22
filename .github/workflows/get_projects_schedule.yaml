@@ -4,7 +4,7 @@ on:
     schedule:
         # Set the schedule for when you want the workflow to run
         # Example: Run every day at midnight (UTC)
-        - cron: '0 0 * * *'
+        - cron: '40 1 * * *'
 
 jobs:
     build:
