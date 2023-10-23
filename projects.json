@@ -113,6 +113,7 @@
         "url": "https://github.com/phil1436/phil-online",
         "homepage": "http://philipp-bonin.com/",
         "topics": [
+            "angular",
             "css",
             "html",
             "html-css-javascript",
@@ -124,9 +125,6 @@
         "stars": 0,
         "description": "Personal Website",
         "description_de": "Persönliche Webseite",
-        "description_es": "Sitio web personal",
-        "description_it": "Sito web personale",
-        "description_fr": "Site Web personnel",
         "logo_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
         "version": ""
@@ -157,8 +155,15 @@
         "name": "VSToolKit",
         "branch": "main",
         "url": "https://github.com/phil1436/VSToolKit",
-        "homepage": "",
-        "topics": [],
+        "homepage": "https://marketplace.visualstudio.com/items?itemName=PhilippBo.vstoolkit",
+        "topics": [
+            "devops",
+            "extension",
+            "javascript",
+            "tools",
+            "vscode",
+            "vscode-extension"
+        ],
         "stars": 0,
         "description": "Providing tools for Visual Studio Code. ",
         "description_de": "Bereitstellung von Tools für Visual Studio Code.",
