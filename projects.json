@@ -6,7 +6,6 @@
         "homepage": "",
         "topics": [
             "automation",
-            "ci-cd",
             "github-actions",
             "github-api",
             "management",
@@ -42,6 +41,28 @@
         "logo_url": "https://raw.githubusercontent.com/phil1436/Color-Chicken/master/src/assets/logo_text.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/Color-Chicken/master/src/assets/logo.png",
         "version": ""
+    },
+    {
+        "name": "GitGitGo-CLI",
+        "branch": "main",
+        "url": "https://github.com/phil1436/GitGitGo-CLI",
+        "homepage": "",
+        "topics": [
+            "ci-cd",
+            "cli",
+            "command-line-tool",
+            "git",
+            "github",
+            "go",
+            "golang",
+            "repository"
+        ],
+        "stars": 0,
+        "description": "GitGitGo-CLI is a CLI tool to help you manage your git repositories.",
+        "description_de": "GitGitGo-CLI ist ein CLI-Tool, das Sie bei der Verwaltung Ihrer Git-Repositorys unterstützt.",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/GitGitGo-CLI/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/GitGitGo-CLI/main/assets/logo.png",
+        "version": "0.0.1"
     },
     {
         "name": "OrbitLab",
@@ -136,6 +157,7 @@
         "homepage": "http://shell.philipp-bonin.com/",
         "topics": [
             "angular",
+            "continuous-delivery",
             "html",
             "personal",
             "personal-website",
