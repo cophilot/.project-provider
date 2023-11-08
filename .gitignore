@@ -4,3 +4,4 @@ resources/init.txt
 .vscode/**
 banners
 test.py
+src/__pycache__
