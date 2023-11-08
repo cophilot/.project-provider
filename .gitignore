@@ -2,3 +2,5 @@ node_modules/**
 ideas.md
 resources/init.txt
 .vscode/**
+banners
+test.py
