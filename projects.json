@@ -190,7 +190,7 @@
         "description": "Providing tools for Visual Studio Code. ",
         "description_de": "Bereitstellung von Tools für Visual Studio Code.",
         "logo_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
-        "logo_small_url": "",
-        "version": ""
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
+        "version": "1.0.3"
     }
 ]
