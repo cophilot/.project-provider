@@ -304,7 +304,7 @@ def generate_banner(projects):
         im = Image.new('RGBA', (800, 450), (0, 0, 0, 0))
         
         draw = ImageDraw.Draw(im)
-        font = ImageFont.truetype("ubuntu.ttf", 50)
+        font = ImageFont.truetype("arial.ttf", 50)
         nameY = 300
         draw.text((400, nameY), project['name'], (255, 255, 255), font=font, anchor="mm")
         font = ImageFont.truetype("arial.ttf", 20)
