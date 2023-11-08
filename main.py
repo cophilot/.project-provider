@@ -304,10 +304,11 @@ def generate_banner(projects):
         im = Image.new('RGBA', (800, 450), (0, 0, 0, 0))
         
         draw = ImageDraw.Draw(im)
-        font = ImageFont.truetype("arial.ttf", 50)
+        req = requests.get("https://github.com/canonical/Ubuntu-fonts/raw/main/fonts/ttf/Ubuntu-Regular.ttf")
+        font = ImageFont.truetype(BytesIO(req.content), 50)
         nameY = 300
         draw.text((400, nameY), project['name'], (255, 255, 255), font=font, anchor="mm")
-        font = ImageFont.truetype("arial.ttf", 20)
+        font = ImageFont.truetype(BytesIO(req.content), 20)
         draw.text((400, 20), "@phil1436", (255, 255, 255), font=font, anchor="mm")
         draw.text((400, nameY + 50), project['description'], (255, 255, 255), font=font, anchor="mm")
         
