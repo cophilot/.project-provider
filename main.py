@@ -4,6 +4,13 @@ import json
 from deep_translator import GoogleTranslator
 import datetime
 import os
+from io import BytesIO
+
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+
+
 
 VERSION = "0.0.1"
 
@@ -36,6 +43,7 @@ def main():
 
         create_project_dict(repo, meta_data)
     save_projects()
+    generate_banner(projects)
     save_timestamp()
     save_log()
     log("", False)
@@ -289,6 +297,50 @@ def log(txt="", to_file=True):
             while len(log_lines) > LOG_LENGTH:
                 log_lines.pop(0)
 
+def generate_banner(projects):
+    images = []
+    for project in projects:
+        # make new transparent image
+        im = Image.new('RGBA', (800, 450), (0, 0, 0, 0))
+        
+        draw = ImageDraw.Draw(im)
+        font = ImageFont.truetype("ubuntu.ttf", 50)
+        nameY = 300
+        draw.text((400, nameY), project['name'], (255, 255, 255), font=font, anchor="mm")
+        font = ImageFont.truetype("arial.ttf", 20)
+        draw.text((400, 20), "@phil1436", (255, 255, 255), font=font, anchor="mm")
+        draw.text((400, nameY + 50), project['description'], (255, 255, 255), font=font, anchor="mm")
+        
+        logo_url = project['logo_small_url']
+        if logo_url == '':
+            logo_url = project['logo_url']
+        if logo_url == '':
+            continue
+        response = requests.get(logo_url)
+        logo = Image.open(BytesIO(response.content))
+        
+        draw = ImageDraw.Draw(logo)
+        #make logo 300px high
+        width = logo.size[0]
+        height = logo.size[1]
+        newHight = 150
+        ratio = height / newHight
+        newWidth = int(width / ratio)
+        
+        if newWidth > 400:
+            newWidth = 400
+            ratio = width / newWidth
+            newHight = int(height / ratio)
+            
+        logo = logo.resize((newWidth, newHight), Image.Resampling.LANCZOS)
+        im.paste(logo, (int((800 - newWidth)/2), nameY - newHight - 50), logo)
+        images.append(im)
+        #im.save('banners/' + project['name'] + '.png')
+
+    # make gif from images 
+        
+    images[0].save('out/banner.gif',
+                save_all=True, append_images=images[1:], optimize=False, duration=5000, loop=0, disposal=2)
 
 def print_help():
     print("Usage: python main.py [options]")
