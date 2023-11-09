@@ -18,7 +18,7 @@
         "description_de": "Projektmanagement-Tool für Ihre Github-Projekte",
         "logo_url": "https://raw.githubusercontent.com/phil1436/.project-provider/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/.project-provider/main/assets/logo_small.png",
-        "version": "0.0.1"
+        "version": "0.0.2"
     },
     {
         "name": "Color-Chicken",
