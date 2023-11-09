@@ -24,8 +24,8 @@ class BannerGenerator:
         for project in projects:
             try:
                 self.generate_images_for_project(project)
-            except:
-                print("Error generating image for project: " + project['name'])
+            except Exception as e:
+                print("Error generating image for project " + project['name'] + ": " + str(e))
                 continue
             
     def generate_images_for_project(self, project):
@@ -81,12 +81,13 @@ class BannerGenerator:
                 nX = temp
             
             offset += stepSize
-            
-            draw.text((400, 20), "@" + self.githubname, (255, 255, 255), font=fontSmall, anchor="mm")
+            # blue (0, 42, 84)
+            # red (84, 0, 0)
+            draw.text((400, 20), "@" + self.githubname, font=fontSmall, anchor="mm", fill=(87,96,106))
             
             im.paste(logo, (int(x - (newWidth / 2)), nameY - newHight - 50), logo)
-            draw.text((nX, nameY), project['name'], (255, 255, 255), font=fontBig, anchor="mm")
-            draw.text((x, nameY + 50), project['description'], (255, 255, 255), font=fontSmall, anchor="mm")
+            draw.text((nX, nameY), project['name'], font=fontBig, anchor="mm", fill=(87,96,106))
+            draw.text((x, nameY + 50), project['description'], font=fontSmall, anchor="mm", fill=(87,96,106))
             self.images.append(im)
         
     def save(self):
