@@ -12,3 +12,5 @@ timestamp:.timestamp
 log_file:.log
 # Specify the log length
 log_length:100
+# Specify the Banner file name
+Banner:path/to/banner.gif

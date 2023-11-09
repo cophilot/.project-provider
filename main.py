@@ -4,15 +4,10 @@ import json
 from deep_translator import GoogleTranslator
 import datetime
 import os
-from io import BytesIO
 
-from PIL import Image
-from PIL import ImageDraw
-from PIL import ImageFont
+from src.BannerGenerator import BannerGenerator
 
-
-
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 
 GITHUB_NAME = ""
 OUTPUT_FILE = ""
@@ -21,6 +16,7 @@ LOG_FILE = ""
 LOG_LENGTH = -1
 QUIETLY = False
 PROJECT_META_FILES = []
+BANNER_PATH = ""
 
 projects = []
 log_lines = []
@@ -75,11 +71,15 @@ def log_props():
 
 def set_args():
     conf_file = ""
+    dev_mode = False
     for i in range(len(sys.argv)):
         arg = sys.argv[i].lower()
         if (arg == "-name" or arg == "-n") and i+1 < len(sys.argv):
             global GITHUB_NAME
             GITHUB_NAME = sys.argv[i+1]
+        if (arg == "-banner") and i+1 < len(sys.argv):
+            global BANNER_PATH
+            BANNER_PATH = sys.argv[i+1]
         elif (arg == "-output" or arg == "-o") and i+1 < len(sys.argv):
             global OUTPUT_FILE
             OUTPUT_FILE = sys.argv[i+1]
@@ -101,6 +101,8 @@ def set_args():
         elif (arg == "-quiet" or arg == "-q"):
             global QUIETLY
             QUIETLY = True
+        elif (arg == "-dev" ):
+            dev_mode = True
         elif (arg == "-timestamp" or arg == "-ts") and i+1 < len(sys.argv):
             global TIMESTAMP_FILE
             TIMESTAMP_FILE = sys.argv[i+1]
@@ -134,6 +136,8 @@ def set_args():
             PROJECT_META_FILES = data["project_files"].split(",")
         if data.get("timestamp"):
             TIMESTAMP_FILE = data["timestamp"]
+        if data.get("banner"):
+            BANNER_PATH = data["banner"]
         if data.get("log_file"):
             LOG_FILE = data["log_file"]
         if data.get("log_length"):
@@ -153,6 +157,15 @@ def set_args():
     if len(PROJECT_META_FILES) == 0:
         print("Error: No project meta files specified!")
         sys.exit(1)
+        
+    if dev_mode:
+        # join paths
+        if BANNER_PATH != "":
+            BANNER_PATH = os.path.join("dev", BANNER_PATH)
+        OUTPUT_FILE = os.path.join("dev", OUTPUT_FILE)
+        LOG_FILE = os.path.join("dev", LOG_FILE)
+        TIMESTAMP_FILE = os.path.join("dev", TIMESTAMP_FILE)
+        
 
 
 def create_project_dict(repo, meta_data):
@@ -251,15 +264,20 @@ def get_github_repos():
 
 def save_projects():
     log(f"Saving {len(projects)} projects to {OUTPUT_FILE}...")
+    if not os.path.isfile(OUTPUT_FILE):
+        os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
+        
     with open(OUTPUT_FILE, "w", encoding='utf8') as outfile:
-        # beatify json
-        # write as utf-8
-
+        # generate outfile if it does not exist
+        #if not os.path.isfile(OUTPUT_FILE):
+        #    outfile.write("[]")
         json.dump(projects, outfile, indent=4, ensure_ascii=False)
     log("Done!", False)
 
 
 def save_timestamp():
+    if not os.path.isfile(OUTPUT_FILE):
+        os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
     with open(TIMESTAMP_FILE, "w") as outfile:
         # write timestamp to file
         outfile.write(f"{str(timestamp)}\n")
@@ -298,55 +316,19 @@ def log(txt="", to_file=True):
                 log_lines.pop(0)
 
 def generate_banner(projects):
-    images = []
-    for project in projects:
-        # make new transparent image
-        im = Image.new('RGBA', (800, 450), (0, 0, 0, 0))
-        
-        draw = ImageDraw.Draw(im)
-        req = requests.get("https://github.com/canonical/Ubuntu-fonts/raw/main/fonts/ttf/Ubuntu-Regular.ttf")
-        font = ImageFont.truetype(BytesIO(req.content), 50)
-        nameY = 300
-        draw.text((400, nameY), project['name'], (255, 255, 255), font=font, anchor="mm")
-        font = ImageFont.truetype(BytesIO(req.content), 20)
-        draw.text((400, 20), "@phil1436", (255, 255, 255), font=font, anchor="mm")
-        draw.text((400, nameY + 50), project['description'], (255, 255, 255), font=font, anchor="mm")
-        
-        logo_url = project['logo_small_url']
-        if logo_url == '':
-            logo_url = project['logo_url']
-        if logo_url == '':
-            continue
-        response = requests.get(logo_url)
-        logo = Image.open(BytesIO(response.content))
-        
-        draw = ImageDraw.Draw(logo)
-        #make logo 300px high
-        width = logo.size[0]
-        height = logo.size[1]
-        newHight = 150
-        ratio = height / newHight
-        newWidth = int(width / ratio)
-        
-        if newWidth > 400:
-            newWidth = 400
-            ratio = width / newWidth
-            newHight = int(height / ratio)
-            
-        logo = logo.resize((newWidth, newHight), Image.Resampling.LANCZOS)
-        im.paste(logo, (int((800 - newWidth)/2), nameY - newHight - 50), logo)
-        images.append(im)
-        #im.save('banners/' + project['name'] + '.png')
-
-    # make gif from images 
-        
-    images[0].save('out/banner.gif',
-                save_all=True, append_images=images[1:], optimize=False, duration=5000, loop=0, disposal=2)
+    if BANNER_PATH == "":
+        return
+    log(f"Generating banner from {len(projects)} projects...")
+    bg = BannerGenerator(BANNER_PATH, GITHUB_NAME)
+    bg.generate_images(projects)
+    bg.save()
+    log("Banner saved to " + BANNER_PATH)
 
 def print_help():
-    print("Usage: python main.py [options]")
-    print("Options:")
-    print("  -name, -n <github name>        Github name of the user")
+    print("Usage: python main.py [flags]")
+    print("")
+    print("Flags:")
+    print("  -name, -n <github-name>        Github name of the user")
     print("  -output, -o <file>             Name of the output file")
     print("  -files, -f <file1,file2,...>   Name of the project meta files")
     print("  -read, -r <file>               Read config file")
@@ -354,6 +336,8 @@ def print_help():
     print("  -quiet, -q                     Do not print anything to the console")
     print("  -help, -h                      Print this help")
     print("  -version, -v                   Print the version number")
+    print("  -banner <path-to-file>         Generate a banner from the projects in the file")
+    print("  -dev                           Run in dev mode")
 
 
 def print_intro(note_quietly=True):

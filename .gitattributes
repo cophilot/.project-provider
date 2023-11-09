@@ -4,3 +4,4 @@
 projects.json export-ignore
 timestamp.txt export-ignore
 .log export-ignore
+out/banner.gif export-ignore

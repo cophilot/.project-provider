@@ -67,6 +67,10 @@ A path to a file where the log of the last update will be stored. The path is re
 
 The maximum length of the log file. If the log file is longer than the specified length, the log file will be truncated.
 
+### Banner
+
+Path to the banner file. The path is relative to the root directory of the project.
+
 ---
 
 ## Projects file
