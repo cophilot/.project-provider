@@ -90,7 +90,7 @@
         "name": "ownobjectscriptextension",
         "branch": "master",
         "url": "https://github.com/phil1436/ownobjectscriptextension",
-        "homepage": "https://phil1436.github.io/ownobjectscriptextension/",
+        "homepage": "https://marketplace.visualstudio.com/items?itemName=PhilippB.ownobjectscriptextension",
         "topics": [
             "extension",
             "intersystems",
