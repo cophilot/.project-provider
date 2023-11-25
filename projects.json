@@ -43,6 +43,28 @@
         "version": ""
     },
     {
+        "name": "DevCv",
+        "branch": "main",
+        "url": "https://github.com/phil1436/DevCv",
+        "homepage": "http://dev-cv.philipp-bonin.com/",
+        "topics": [
+            "angular",
+            "cv",
+            "developer",
+            "developer-tools",
+            "resume",
+            "resume-builder",
+            "resume-website",
+            "webapp"
+        ],
+        "stars": 0,
+        "description": "A resume editor for developers",
+        "description_de": "Ein Lebenslauf-Editor für Entwickler",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/DevCv/main/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/DevCv/main/src/assets/logo.png",
+        "version": ""
+    },
+    {
         "name": "GitGitGo-CLI",
         "branch": "main",
         "url": "https://github.com/phil1436/GitGitGo-CLI",
@@ -191,6 +213,6 @@
         "description_de": "Bereitstellung von Tools für Visual Studio Code.",
         "logo_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
-        "version": "1.0.3"
+        "version": "1.1.0"
     }
 ]
