@@ -87,6 +87,27 @@
         "version": "0.0.2"
     },
     {
+        "name": "iScore",
+        "branch": "master",
+        "url": "https://github.com/phil1436/iScore",
+        "homepage": "http://iscore.philipp-bonin.com/",
+        "topics": [
+            "games",
+            "react",
+            "score",
+            "scoreboard",
+            "social-games",
+            "typescript",
+            "webapp"
+        ],
+        "stars": 0,
+        "description": "A simple score keeper app for your games.",
+        "description_de": "Eine einfache Score-Keeper-App für Ihre Spiele.",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/iScore/master/public/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/iScore/master/public/logo.png",
+        "version": ""
+    },
+    {
         "name": "OrbitLab",
         "branch": "master",
         "url": "https://github.com/phil1436/OrbitLab",
