@@ -84,7 +84,7 @@
         "description_de": "GitGitGo-CLI ist ein CLI-Tool, das Sie bei der Verwaltung Ihrer Git-Repositorys unterstützt.",
         "logo_url": "https://raw.githubusercontent.com/phil1436/GitGitGo-CLI/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/phil1436/GitGitGo-CLI/main/assets/logo.png",
-        "version": "0.0.2"
+        "version": "0.1.0"
     },
     {
         "name": "iScore",
