@@ -21,6 +21,28 @@
         "version": "0.0.3"
     },
     {
+        "name": "cascoria",
+        "branch": "main",
+        "url": "https://github.com/phil1436/cascoria",
+        "homepage": "http://cascoria.philipp-bonin.com/",
+        "topics": [
+            "eslint",
+            "prettier",
+            "sass",
+            "vite",
+            "vue",
+            "vue3",
+            "webapp",
+            "website"
+        ],
+        "stars": 0,
+        "description": "A score keeping app for the board game Cascadia",
+        "description_de": "Eine Punktezähl-App für das Brettspiel Cascadia",
+        "logo_url": "https://raw.githubusercontent.com/phil1436/cascoria/main/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/phil1436/cascoria/main/src/assets/logo.png",
+        "version": ""
+    },
+    {
         "name": "Color-Chicken",
         "branch": "master",
         "url": "https://github.com/phil1436/Color-Chicken",
