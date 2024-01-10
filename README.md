@@ -9,17 +9,17 @@
 
 <!-- Badges -->
 <div align="center">
-   <a href="https://github.com/phil1436/.project-provider/releases">
-       <img src="https://img.shields.io/github/v/release/phil1436/.project-provider?display_name=tag" alt="current realease" />
+   <a href="https://github.com/cophilot/.project-provider/releases">
+       <img src="https://img.shields.io/github/v/release/cophilot/.project-provider?display_name=tag" alt="current realease" />
    </a>
-   <a href="https://github.com/phil1436/.project-provider/blob/master/LICENSE">
-       <img src="https://img.shields.io/github/license/phil1436/.project-provider" alt="license" />
+   <a href="https://github.com/cophilot/.project-provider/blob/master/LICENSE">
+       <img src="https://img.shields.io/github/license/cophilot/.project-provider" alt="license" />
    </a>
-   <a href="https://github.com/phil1436/.project-provider/stargazers">
-       <img src="https://img.shields.io/github/stars/phil1436/.project-provider" alt="stars" />
+   <a href="https://github.com/cophilot/.project-provider/stargazers">
+       <img src="https://img.shields.io/github/stars/cophilot/.project-provider" alt="stars" />
    </a>
-   <a href="https://github.com/phil1436/.project-provider/commits/master">
-       <img src="https://img.shields.io/github/last-commit/phil1436/.project-provider" alt="last commit" />
+   <a href="https://github.com/cophilot/.project-provider/commits/master">
+       <img src="https://img.shields.io/github/last-commit/cophilot/.project-provider" alt="last commit" />
    </a>
 </div>
 
@@ -125,6 +125,6 @@ If you want to run the project provider locally, you can follow these steps:
 
 ---
 
-by [Philipp B.](https://github.com/phil1436)
+by [Philipp B.](https://github.com/cophilot)
 
-[https://raw.githubusercontent.com/phil1436/.project-provider/main/projects.json](https://raw.githubusercontent.com/phil1436/.project-provider/main/projects.json)
+[https://raw.githubusercontent.com/cophilot/.project-provider/main/projects.json](https://raw.githubusercontent.com/cophilot/.project-provider/main/projects.json)

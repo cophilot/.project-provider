@@ -2,7 +2,7 @@
     {
         "name": ".project-provider",
         "branch": "main",
-        "url": "https://github.com/phil1436/.project-provider",
+        "url": "https://github.com/cophilot/.project-provider",
         "homepage": "",
         "topics": [
             "automation",
@@ -16,14 +16,14 @@
         "stars": 0,
         "description": " Project management tool for your Github projects",
         "description_de": "Projektmanagement-Tool für Ihre Github-Projekte",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/.project-provider/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/.project-provider/main/assets/logo_small.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo_small.png",
         "version": "0.0.3"
     },
     {
         "name": "cascoria",
         "branch": "main",
-        "url": "https://github.com/phil1436/cascoria",
+        "url": "https://github.com/cophilot/cascoria",
         "homepage": "http://cascoria.philipp-bonin.com/",
         "topics": [
             "eslint",
@@ -38,14 +38,14 @@
         "stars": 0,
         "description": "A score keeping app for the board game Cascadia",
         "description_de": "Eine Punktezähl-App für das Brettspiel Cascadia",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/cascoria/main/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/cascoria/main/src/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/cascoria/main/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/cascoria/main/src/assets/logo.png",
         "version": ""
     },
     {
         "name": "Color-Chicken",
         "branch": "master",
-        "url": "https://github.com/phil1436/Color-Chicken",
+        "url": "https://github.com/cophilot/Color-Chicken",
         "homepage": "http://colorchicken.philipp-bonin.com/",
         "topics": [
             "angular",
@@ -60,14 +60,14 @@
         "stars": 0,
         "description": "Be a feathered chameleon, master the hurdles in Color Chicken!",
         "description_de": "Seien Sie ein gefiedertes Chamäleon und meistern Sie die Hürden in Color Chicken!",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/Color-Chicken/master/src/assets/logo_text.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/Color-Chicken/master/src/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo_text.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo.png",
         "version": ""
     },
     {
         "name": "DevCv",
         "branch": "main",
-        "url": "https://github.com/phil1436/DevCv",
+        "url": "https://github.com/cophilot/DevCv",
         "homepage": "http://dev-cv.philipp-bonin.com/",
         "topics": [
             "angular",
@@ -82,14 +82,14 @@
         "stars": 0,
         "description": "A resume editor for developers",
         "description_de": "Ein Lebenslauf-Editor für Entwickler",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/DevCv/main/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/DevCv/main/src/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
     },
     {
         "name": "GitGitGo-CLI",
         "branch": "main",
-        "url": "https://github.com/phil1436/GitGitGo-CLI",
+        "url": "https://github.com/cophilot/GitGitGo-CLI",
         "homepage": "",
         "topics": [
             "ci-cd",
@@ -104,14 +104,14 @@
         "stars": 0,
         "description": "GitGitGo-CLI is a CLI tool to help you manage your git repositories.",
         "description_de": "GitGitGo-CLI ist ein CLI-Tool, das Sie bei der Verwaltung Ihrer Git-Repositorys unterstützt.",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/GitGitGo-CLI/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/GitGitGo-CLI/main/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/GitGitGo-CLI/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/GitGitGo-CLI/main/assets/logo.png",
         "version": "0.1.0"
     },
     {
         "name": "iScore",
         "branch": "master",
-        "url": "https://github.com/phil1436/iScore",
+        "url": "https://github.com/cophilot/iScore",
         "homepage": "http://iscore.philipp-bonin.com/",
         "topics": [
             "games",
@@ -125,14 +125,14 @@
         "stars": 0,
         "description": "A simple score keeper app for your games.",
         "description_de": "Eine einfache Score-Keeper-App für Ihre Spiele.",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/iScore/master/public/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/iScore/master/public/logo_small.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo_small.png",
         "version": ""
     },
     {
         "name": "MyPortfolio",
         "branch": "master",
-        "url": "https://github.com/phil1436/MyPortfolio",
+        "url": "https://github.com/cophilot/MyPortfolio",
         "homepage": "http://portfolio.philipp-bonin.com/",
         "topics": [
             "angular",
@@ -145,14 +145,14 @@
         "stars": 0,
         "description": "A portfolio website for my projects",
         "description_de": "Eine Portfolio-Website für meine Projekte",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/MyPortfolio/master/src/assets/logo_big.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/MyPortfolio/master/src/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/MyPortfolio/master/src/assets/logo_big.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/MyPortfolio/master/src/assets/logo.png",
         "version": ""
     },
     {
         "name": "OrbitLab",
         "branch": "master",
-        "url": "https://github.com/phil1436/OrbitLab",
+        "url": "https://github.com/cophilot/OrbitLab",
         "homepage": "http://orbitlab.philipp-bonin.com/",
         "topics": [
             "angular",
@@ -167,14 +167,14 @@
         ],
         "stars": 0,
         "description": "A webapplication to simulate orbits.",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/OrbitLab/master/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/OrbitLab/master/src/assets/logo_small.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
     },
     {
         "name": "Petgram",
         "branch": "master",
-        "url": "https://github.com/phil1436/Petgram",
+        "url": "https://github.com/cophilot/Petgram",
         "homepage": "http://petgram.philipp-bonin.com/",
         "topics": [
             "angular",
@@ -188,14 +188,14 @@
         "stars": 0,
         "description": "Nothing to see here, just a social media site for pets...",
         "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Seite für Haustiere ...",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/img/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/Petgram/master/src/assets/img/logo_small.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo_small.png",
         "version": ""
     },
     {
         "name": "phil-online",
         "branch": "master",
-        "url": "https://github.com/phil1436/phil-online",
+        "url": "https://github.com/cophilot/phil-online",
         "homepage": "http://philipp-bonin.com/",
         "topics": [
             "angular",
@@ -210,14 +210,14 @@
         "stars": 0,
         "description": "Personal Website",
         "description_de": "Persönliche Webseite",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/phil-online/master/src/assets/logoPhilOnline.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/phil-online/master/src/assets/logoPhilOnline.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-online/master/src/assets/logoPhilOnline.png",
         "version": ""
     },
     {
         "name": "phil-shell",
         "branch": "master",
-        "url": "https://github.com/phil1436/phil-shell",
+        "url": "https://github.com/cophilot/phil-shell",
         "homepage": "http://shell.philipp-bonin.com/",
         "topics": [
             "angular",
@@ -233,14 +233,14 @@
         "stars": 0,
         "description": "A shell like personal website ",
         "description_de": "Eine hüllenartige persönliche Website",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/phil-shell/master/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/phil-shell/master/src/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "version": ""
     },
     {
         "name": "VSToolKit",
         "branch": "main",
-        "url": "https://github.com/phil1436/VSToolKit",
+        "url": "https://github.com/cophilot/VSToolKit",
         "homepage": "https://marketplace.visualstudio.com/items?itemName=PhilippBo.vstoolkit",
         "topics": [
             "devops",
@@ -253,8 +253,8 @@
         "stars": 0,
         "description": "Providing tools for Visual Studio Code. ",
         "description_de": "Bereitstellung von Tools für Visual Studio Code.",
-        "logo_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/phil1436/VSToolKit/main/assets/logo.png",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/VSToolKit/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/VSToolKit/main/assets/logo.png",
         "version": "1.1.0"
     }
 ]

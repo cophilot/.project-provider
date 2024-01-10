@@ -27,13 +27,13 @@
 [2024-01-08 02:18:49.467458] Banner saved to out/banner.gif
 [2024-01-08 02:18:49.467458] Timestamp: 2024-01-08 02:18:49.467458
 [2024-01-09 02:19:02.707201] ---
-[2024-01-09 02:19:02.707201] Github name: phil1436
+[2024-01-09 02:19:02.707201] Github name: cophilot
 [2024-01-09 02:19:02.707201] Output file: projects.json
 [2024-01-09 02:19:02.707201] Looking for project files: ['.phil-project', '.phil']
 [2024-01-09 02:19:02.707201] Log file: .log
 [2024-01-09 02:19:02.707201] Log length: 100
 [2024-01-09 02:19:02.707201] Timestamp file: .timestamp
-[2024-01-09 02:19:02.707201] Found 20 repos for user phil1436
+[2024-01-09 02:19:02.707201] Found 20 repos for user cophilot
 [2024-01-09 02:19:02.707201] Found project .project-provider (.phil-project)...
 [2024-01-09 02:19:02.707201] Project .project-provider has meta data: {'logo': 'assets/logo.png', 'logo_small': 'assets/logo_small.png', 'description_translate': 'de', 'version': '0.0.3'}
 [2024-01-09 02:19:02.707201] Found project cascoria (.phil-project)...
@@ -63,13 +63,13 @@
 [2024-01-09 02:19:02.707201] Banner saved to out/banner.gif
 [2024-01-09 02:19:02.707201] Timestamp: 2024-01-09 02:19:02.707201
 [2024-01-10 02:19:12.597173] ---
-[2024-01-10 02:19:12.597173] Github name: phil1436
+[2024-01-10 02:19:12.597173] Github name: cophilot
 [2024-01-10 02:19:12.597173] Output file: projects.json
 [2024-01-10 02:19:12.597173] Looking for project files: ['.phil-project', '.phil']
 [2024-01-10 02:19:12.597173] Log file: .log
 [2024-01-10 02:19:12.597173] Log length: 100
 [2024-01-10 02:19:12.597173] Timestamp file: .timestamp
-[2024-01-10 02:19:12.597173] Found 21 repos for user phil1436
+[2024-01-10 02:19:12.597173] Found 21 repos for user cophilot
 [2024-01-10 02:19:12.597173] Found project .project-provider (.phil-project)...
 [2024-01-10 02:19:12.597173] Project .project-provider has meta data: {'logo': 'assets/logo.png', 'logo_small': 'assets/logo_small.png', 'description_translate': 'de', 'version': '0.0.3'}
 [2024-01-10 02:19:12.597173] Found project cascoria (.phil-project)...
