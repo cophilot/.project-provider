@@ -166,7 +166,7 @@
             "webapplication"
         ],
         "stars": 0,
-        "description": "A webapplication to simulate orbits.",
+        "description": "A webapplication to simulate orbits on a very basic level.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
