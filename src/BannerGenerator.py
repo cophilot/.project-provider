@@ -13,7 +13,6 @@ class BannerGenerator:
         self.githubname = githubname
         self.images = []
         self.font_req = requests.get("https://github.com/canonical/Ubuntu-fonts/blob/main/fonts/ttf/UbuntuSans-Bold.ttf")
-        #self.font_req = requests.get("https://github.com/canonical/Ubuntu-fonts/raw/main/fonts/ttf/Ubuntu-Regular.ttf")
         self.duration = 70 # 70 milliseconds per frame
         self.invert_direction = False
         
@@ -35,8 +34,6 @@ class BannerGenerator:
         
         fontBig = ImageFont.truetype("font.ttf", 50)
         fontSmall = ImageFont.truetype("font.ttf", 20)
-        #fontBig = ImageFont.truetype(BytesIO(self.font_req.content), 50)
-        #fontSmall = ImageFont.truetype(BytesIO(self.font_req.content), 20)
         nameY = 300
         
         #get logo url

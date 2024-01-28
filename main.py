@@ -17,6 +17,7 @@ LOG_LENGTH = -1
 QUIETLY = False
 PROJECT_META_FILES = []
 BANNER_PATH = ""
+FORCE = False
 
 projects = []
 log_lines = []
@@ -31,13 +32,18 @@ def main():
 
     repos = get_github_repos()
     log(f"Found {len(repos)} repos for user {GITHUB_NAME}")
-    log()
     for repo in repos:
         meta_data = get_project_file(repo)
         if meta_data == None:
             continue
 
         create_project_dict(repo, meta_data)
+    
+    if not FORCE and not has_changes():
+        log("No changes detected!")
+        log("Exiting...")
+        sys.exit(1)
+        
     save_projects()
     generate_banner(projects)
     save_timestamp()
@@ -46,6 +52,7 @@ def main():
     log("Finished!", False)
     log("Have a nice day :)", False)
     log("by Philipp B.", False)
+    sys.exit(0)
 
 
 def log_props():
@@ -103,6 +110,9 @@ def set_args():
             QUIETLY = True
         elif (arg == "-dev" ):
             dev_mode = True
+        elif (arg == "-force" ):
+            global FORCE
+            FORCE = True
         elif (arg == "-timestamp" or arg == "-ts") and i+1 < len(sys.argv):
             global TIMESTAMP_FILE
             TIMESTAMP_FILE = sys.argv[i+1]
@@ -226,6 +236,21 @@ def create_project_dict(repo, meta_data):
         log(f"Ignoring project {name}")
     log()
 
+def has_changes():
+    old_Projects = []
+    if not os.path.isfile(OUTPUT_FILE):
+        return True
+    try:
+        old_Projects = json.load(open(OUTPUT_FILE, "r"))
+    except Exception:
+        return True
+    if len(old_Projects) != len(projects):
+        return True
+    for project in projects:
+        if not project in old_Projects:
+            return True
+    return False
+        
 
 def convert_conf_file(txt):
     data = {}
@@ -268,9 +293,6 @@ def save_projects():
         os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
         
     with open(OUTPUT_FILE, "w", encoding='utf8') as outfile:
-        # generate outfile if it does not exist
-        #if not os.path.isfile(OUTPUT_FILE):
-        #    outfile.write("[]")
         json.dump(projects, outfile, indent=4, ensure_ascii=False)
     log("Done!", False)
 
@@ -334,6 +356,7 @@ def print_help():
     print("  -read, -r <file>               Read config file")
     print("  -ts, -timestamp <file>         Name of the timestamp file")
     print("  -quiet, -q                     Do not print anything to the console")
+    print("  -force                         Execute even if there are no changes")
     print("  -help, -h                      Print this help")
     print("  -version, -v                   Print the version number")
     print("  -banner <path-to-file>         Generate a banner from the projects in the file")
