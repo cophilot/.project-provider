@@ -48,12 +48,15 @@ def main():
     generate_banner(projects)
     save_timestamp()
     save_log()
+    push()
     log("", False)
     log("Finished!", False)
     log("Have a nice day :)", False)
     log("by Philipp B.", False)
     sys.exit(0)
 
+def push():
+    os.system("sh push.sh")
 
 def log_props():
     log("---")
