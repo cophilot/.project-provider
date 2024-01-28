@@ -2,6 +2,14 @@
 
 ---
 
+## [v1.0.0](https://github.com/cophilot/.project-provider/tree/0.0.3) (2024-1-28)
+
+-   Official release
+-   Added '-force' flag
+-   Generates only when changes are detected
+
+---
+
 ## [v0.0.3](https://github.com/cophilot/.project-provider/tree/0.0.3) (2023-12-01)
 
 -   Bug fixes

@@ -7,7 +7,7 @@ import os
 
 from src.BannerGenerator import BannerGenerator
 
-VERSION = "0.0.3"
+VERSION = "1.0.0"
 
 GITHUB_NAME = ""
 OUTPUT_FILE = ""

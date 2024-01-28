@@ -1,7 +1,6 @@
 <div align="center">
   <br />
   <img src="assets/logo.png" alt=".project-providerLogo" width="50%"/>
-  <!-- <h1>.project-provider</h1> -->
   <p>
     Automatic project provider tool for your Github projects.
   </p>
@@ -112,7 +111,7 @@ The last thing to do is to set up the project files in your projects, so the pro
 
 ---
 
-## Run the .project-provider locally
+## Running locally
 
 If you want to run the project provider locally, you can follow these steps:
 
@@ -122,6 +121,14 @@ If you want to run the project provider locally, you can follow these steps:
 4. Run the project provider with `python main.py`
 
 > If you need help run `python main.py -help`
+
+---
+
+## Workflows
+
+-   **Get Projects (PUSH)** - This workflow will be triggered if you push to the repository. It will update the projects file and push the changes to the repository when there are changes.
+-   **Get Projects (SCHEDULE)** - This workflow will be triggered every night. It will update the projects file and push the changes to the repository when there are changes.
+-   **Get Projects (FORCE)** - This workflow will be triggered manually. It will update the projects file and push the changes to the repository (even if there are no changes detected).
 
 ---
 
