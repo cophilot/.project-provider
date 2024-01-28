@@ -42,7 +42,7 @@ def main():
     if not FORCE and not has_changes():
         log("No changes detected!")
         log("Exiting...")
-        sys.exit(1)
+        sys.exit(5)
         
     save_projects()
     generate_banner(projects)
