@@ -5,7 +5,7 @@ on:
         branches: [main]
 
 jobs:
-    build:
+    get-projects-push:
         runs-on: ubuntu-latest
 
         steps:
@@ -27,13 +27,9 @@ jobs:
             - name: Commit changes
               run: |
                   if [ $? -eq 0 ]; then
-                      echo "Changes detected"
                       git config user.name 'GitHub Actions'
                       git config user.email 'actions@github.com'
                       git add .  # This will stage all changes in the repository
                       git commit -m "Automated data update"
                       git push
-                  fi
-                  else
-                      echo "No changes since last run"
                   fi

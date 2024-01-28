@@ -1,13 +1,10 @@
-name: Get Projects (SCHEDULE)
+name: Get Projects (FORCED)
 
 on:
-    schedule:
-        # Set the schedule for when you want the workflow to run
-        # Example: Run every day at midnight (UTC)
-        - cron: '40 1 * * *'
+    workflow_dispatch:
 
 jobs:
-    get-projects-schedule:
+    get-projects-forced:
         runs-on: ubuntu-latest
 
         steps:
@@ -24,7 +21,7 @@ jobs:
                   pip install -r requirements.txt
 
             - name: Run Python script
-              run: python main.py -r .conf
+              run: python main.py -r .conf -force
 
             - name: Commit changes
               run: |
