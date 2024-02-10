@@ -80,8 +80,8 @@
             "webapp"
         ],
         "stars": 0,
-        "description": "A resume editor for developers",
-        "description_de": "Ein Lebenslauf-Editor für Entwickler",
+        "description": "A simple CV builder for developers.",
+        "description_de": "Ein einfacher Lebenslauf-Builder für Entwickler.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
@@ -255,7 +255,7 @@
         "description_de": "Ein CLI-Tool zum Verfolgen von Vorlagen und zum Generieren von Dateien daraus.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
-        "version": "0.3.0"
+        "version": "0.3.1"
     },
     {
         "name": "VSToolKit",
