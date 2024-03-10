@@ -87,28 +87,6 @@
         "version": ""
     },
     {
-        "name": "GitGitGo-CLI",
-        "branch": "main",
-        "url": "https://github.com/cophilot/GitGitGo-CLI",
-        "homepage": "",
-        "topics": [
-            "ci-cd",
-            "cli",
-            "command-line-tool",
-            "git",
-            "github",
-            "go",
-            "golang",
-            "repository"
-        ],
-        "stars": 0,
-        "description": "GitGitGo-CLI is a CLI tool to help you manage your git repositories.",
-        "description_de": "GitGitGo-CLI ist ein CLI-Tool, das Sie bei der Verwaltung Ihrer Git-Repositorys unterstützt.",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/GitGitGo-CLI/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/GitGitGo-CLI/main/assets/logo.png",
-        "version": "0.1.0"
-    },
-    {
         "name": "iScore",
         "branch": "master",
         "url": "https://github.com/cophilot/iScore",
