@@ -259,12 +259,15 @@ def convert_conf_file(txt):
     data = {}
     divider = ":"
     for line in txt.splitlines():
+        if line.strip().startswith("#?"):
+            divider = line.strip().replace("#?", "")
+            continue
         if line == "" or line.startswith("#"):
             continue
-        if not ":" in line:
+        if not divider in line:
             data[line.strip().lower()] = line.strip()
             continue
-        key, value = line.split(":", 1)
+        key, value = line.split(divider, 1)
         data[key.strip().lower()] = value.strip()
     return data
 
