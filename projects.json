@@ -18,7 +18,7 @@
         "description_de": "Projektmanagement-Tool für Ihre Github-Projekte",
         "logo_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo_small.png",
-        "version": "1.0.0"
+        "version": "1.0.1"
     },
     {
         "name": "cascoria",
@@ -102,8 +102,9 @@
         ],
         "stars": 0,
         "description": "A simple score keeper app for your games.",
-        "logo_url": "",
-        "logo_small_url": "",
+        "description_de": "Eine einfache Score-Keeper-App für Ihre Spiele.",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo_small.png",
         "version": ""
     },
     {
