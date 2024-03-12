@@ -257,6 +257,7 @@ def has_changes():
 
 def convert_conf_file(txt):
     data = {}
+    divider = ":"
     for line in txt.splitlines():
         if line == "" or line.startswith("#"):
             continue
