@@ -88,6 +88,20 @@ All properties are optional!
 
 Take a look at the [example project file](.project.template) to see how a project file looks like.
 
+### Syntax
+
+By default the project file is a simple key-value file in the format `key:value`. You can configure the divider by adding a line with the `#?<divider>` syntax. The `divider` is the string that will be used as divider.
+
+_Example:_
+
+```plaintext
+#?=
+logo=assets/logo.png
+logo_small=assets/logo_small.png
+description_translate=de
+version=1.0
+```
+
 ---
 
 ## Get your own .project-provider

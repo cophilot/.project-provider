@@ -2,6 +2,13 @@
 
 ---
 
+## [v1.0.1](https://github.com/cophilot/.project-provider/tree/1.0.1) (2024-3-12)
+
+-   Bug fixes
+-   Added Divider configuration
+
+---
+
 ## [v1.0.0](https://github.com/cophilot/.project-provider/tree/1.0.0) (2024-1-28)
 
 -   Official release

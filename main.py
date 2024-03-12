@@ -7,7 +7,7 @@ import os
 
 from src.BannerGenerator import BannerGenerator
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 
 GITHUB_NAME = ""
 OUTPUT_FILE = ""
@@ -18,6 +18,7 @@ QUIETLY = False
 PROJECT_META_FILES = []
 BANNER_PATH = ""
 FORCE = False
+DEV_MODE = False
 
 projects = []
 log_lines = []
@@ -48,7 +49,8 @@ def main():
     generate_banner(projects)
     save_timestamp()
     save_log()
-    push()
+    if not DEV_MODE:
+        push()
     log("", False)
     log("Finished!", False)
     log("Have a nice day :)", False)
@@ -81,7 +83,6 @@ def log_props():
 
 def set_args():
     conf_file = ""
-    dev_mode = False
     for i in range(len(sys.argv)):
         arg = sys.argv[i].lower()
         if (arg == "-name" or arg == "-n") and i+1 < len(sys.argv):
@@ -112,7 +113,8 @@ def set_args():
             global QUIETLY
             QUIETLY = True
         elif (arg == "-dev" ):
-            dev_mode = True
+            global DEV_MODE
+            DEV_MODE = True
         elif (arg == "-force" ):
             global FORCE
             FORCE = True
@@ -170,8 +172,8 @@ def set_args():
     if len(PROJECT_META_FILES) == 0:
         print("Error: No project meta files specified!")
         sys.exit(1)
-        
-    if dev_mode:
+
+    if DEV_MODE:
         # join paths
         if BANNER_PATH != "":
             BANNER_PATH = os.path.join("dev", BANNER_PATH)
