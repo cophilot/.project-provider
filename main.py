@@ -1,8 +1,8 @@
-import requests
 import sys
+import requests
+import datetime
 import json
 from deep_translator import GoogleTranslator
-import datetime
 import os
 
 from src.BannerGenerator import BannerGenerator
@@ -35,16 +35,16 @@ def main():
     log(f"Found {len(repos)} repos for user {GITHUB_NAME}")
     for repo in repos:
         meta_data = get_project_file(repo)
-        if meta_data == None:
+        if meta_data is None:
             continue
 
         create_project_dict(repo, meta_data)
-    
+
     if not FORCE and not has_changes():
         log("No changes detected!")
         log("Exiting...")
         sys.exit(0)
-        
+
     save_projects()
     generate_banner(projects)
     save_timestamp()
@@ -201,7 +201,7 @@ def create_project_dict(repo, meta_data):
     else:
         log(f"Project {name} has no meta data")
 
-    if meta_data.get("description_translate") and repo["description"] != "" and repo["description"] != None:
+    if meta_data.get("description_translate") and repo["description"] != "" and repo["description"] is not None:
         translate_list = meta_data.get("description_translate").split(",")
         for to in translate_list:
             try:
@@ -210,7 +210,7 @@ def create_project_dict(repo, meta_data):
             except Exception:
                 log(f"Could not translate description to {to}")
                 project["description_" + to] = ""
-    elif meta_data.get("translate_description") and repo["description"] != "" and repo["description"] != None:
+    elif meta_data.get("translate_description") and repo["description"] != "" and repo["description"] is not None:
         translate_list = meta_data.get("translate_description").split(",")
         for to in translate_list:
             try:
@@ -236,7 +236,10 @@ def create_project_dict(repo, meta_data):
     else:
         project["version"] = ""
     if not meta_data.get("ignore"):
-        projects.append(project)
+        if meta_data.get("priority") or meta_data.get("prio"):
+            projects.insert(0, project)
+        else:
+            projects.append(project)
     else:
         log(f"Ignoring project {name}")
     log()

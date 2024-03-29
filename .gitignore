@@ -5,4 +5,4 @@ resources/init.txt
 banners
 test.py
 src/__pycache__
-dev/**
+/dev

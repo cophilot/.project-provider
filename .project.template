@@ -3,6 +3,12 @@
 
 # Write comments with a # at the beginning of the line.
 
+# If you want that this project will be ignored by the provider then write 'ignore'.
+ignore
+
+# If you want tp prioritize this project then write 'prio'.
+prio
+
 # The path to the logo of your project relative to the root of the project.
 # In the provider the path will be used to provide a url to the logo.
 logo:assets/logo.png
@@ -17,5 +23,3 @@ description_translate:de,es
 # The version of your project.
 version:1.0
 
-# If you want that this project will be ignored by the provider then write 'ignore'.
-ignore
