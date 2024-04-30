@@ -145,7 +145,7 @@
         ],
         "stars": 0,
         "description": "A simple score keeper app for your games.",
-        "description_de": "Eine einfache Score-Keeper-App für Ihre Spiele.",
+        "description_de": "Eine einfache App zur Punktezählung für Ihre Spiele.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo_small.png",
         "version": ""
