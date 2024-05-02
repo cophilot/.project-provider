@@ -37,7 +37,7 @@
         ],
         "stars": 0,
         "description": "A webapplication to simulate orbits on a very basic level.",
-        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr grundlegenden Niveau.",
+        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr einfachen Niveau.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
@@ -124,7 +124,7 @@
         ],
         "stars": 0,
         "description": "A simple CV builder for developers.",
-        "description_de": "Ein einfacher Lebenslauf-Generator für Entwickler.",
+        "description_de": "Ein einfacher Lebenslauf-Builder für Entwickler.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
