@@ -231,7 +231,7 @@
         ],
         "stars": 0,
         "description": "A shell like personal website ",
-        "description_de": "Eine hüllenartige persönliche Website",
+        "description_de": "Eine Shell-ähnliche persönliche Website",
         "logo_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "version": ""
