@@ -102,7 +102,7 @@
         ],
         "stars": 0,
         "description": "Be a feathered chameleon, master the hurdles in Color Chicken!",
-        "description_de": "Sei ein gefiedertes Chamäleon und meistere die Hürden bei Color Chicken!",
+        "description_de": "Seien Sie ein gefiedertes Chamäleon und meistern Sie die Hürden in Color Chicken!",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo_text.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo.png",
         "version": ""
@@ -124,7 +124,7 @@
         ],
         "stars": 0,
         "description": "A simple CV builder for developers.",
-        "description_de": "Ein einfacher Lebenslauf-Generator für Entwickler.",
+        "description_de": "Ein einfacher Lebenslauf-Builder für Entwickler.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
@@ -145,7 +145,7 @@
         ],
         "stars": 0,
         "description": "A simple score keeper app for your games.",
-        "description_de": "Eine einfache App zur Punktezählung für Ihre Spiele.",
+        "description_de": "Eine einfache Score-Keeper-App für Ihre Spiele.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo_small.png",
         "version": ""
