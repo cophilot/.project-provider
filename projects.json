@@ -37,7 +37,7 @@
         ],
         "stars": 0,
         "description": "A webapplication to simulate orbits on a very basic level.",
-        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr grundlegenden Niveau.",
+        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr einfachen Niveau.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
@@ -102,7 +102,7 @@
         ],
         "stars": 0,
         "description": "Be a feathered chameleon, master the hurdles in Color Chicken!",
-        "description_de": "Seien Sie ein gefiedertes Chamäleon und meistern Sie die Hürden in Color Chicken!",
+        "description_de": "Sei ein gefiedertes Chamäleon und meistere die Hürden bei Color Chicken!",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo_text.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo.png",
         "version": ""
