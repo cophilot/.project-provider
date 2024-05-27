@@ -124,7 +124,7 @@
         ],
         "stars": 0,
         "description": "A simple CV builder for developers.",
-        "description_de": "Ein einfacher Lebenslauf-Generator für Entwickler.",
+        "description_de": "Ein einfacher Lebenslauf-Builder für Entwickler.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
@@ -199,7 +199,7 @@
         ],
         "stars": 0,
         "description": "Nothing to see here, just a social media site for pets...",
-        "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Site für Haustiere …",
+        "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Seite für Haustiere ...",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo_small.png",
         "version": ""
