@@ -37,7 +37,7 @@
         ],
         "stars": 0,
         "description": "A webapplication to simulate orbits on a very basic level.",
-        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr einfachen Niveau.",
+        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr grundlegenden Niveau.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
@@ -80,7 +80,7 @@
         ],
         "stars": 0,
         "description": "A score keeping app for the board game Cascadia",
-        "description_de": "Eine Punktezähl-App für das Brettspiel Cascadia",
+        "description_de": "Eine App zur Punktezählung für das Brettspiel Cascadia",
         "logo_url": "https://raw.githubusercontent.com/cophilot/cascoria/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/cascoria/main/src/assets/logo.png",
         "version": ""
@@ -102,7 +102,7 @@
         ],
         "stars": 0,
         "description": "Be a feathered chameleon, master the hurdles in Color Chicken!",
-        "description_de": "Seien Sie ein gefiedertes Chamäleon und meistern Sie die Hürden in Color Chicken!",
+        "description_de": "Sei ein gefiedertes Chamäleon und meistere die Hürden bei Color Chicken!",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo_text.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo.png",
         "version": ""
@@ -124,7 +124,7 @@
         ],
         "stars": 0,
         "description": "A simple CV builder for developers.",
-        "description_de": "Ein einfacher Lebenslauf-Builder für Entwickler.",
+        "description_de": "Ein einfacher Lebenslauf-Generator für Entwickler.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
@@ -158,7 +158,7 @@
         ],
         "stars": 0,
         "description": "A simple score keeper app for your games.",
-        "description_de": "Eine einfache Score-Keeper-App für Ihre Spiele.",
+        "description_de": "Eine einfache App zur Punktezählung für Ihre Spiele.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo_small.png",
         "version": ""
@@ -199,7 +199,7 @@
         ],
         "stars": 0,
         "description": "Nothing to see here, just a social media site for pets...",
-        "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Seite für Haustiere ...",
+        "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Site für Haustiere …",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo_small.png",
         "version": ""
@@ -244,7 +244,7 @@
         ],
         "stars": 0,
         "description": "A shell like personal website ",
-        "description_de": "Eine hüllenartige persönliche Website",
+        "description_de": "Eine Shell-ähnliche persönliche Website",
         "logo_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "version": ""
