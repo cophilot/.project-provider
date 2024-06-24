@@ -140,7 +140,7 @@
         "description_de": "Visualisieren Sie den Fluss Ihres Python-Codes.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/FlowVisor/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/FlowVisor/main/assets/logo_small.png",
-        "version": "0.3.0"
+        "version": "0.3.1"
     },
     {
         "name": "iScore",
