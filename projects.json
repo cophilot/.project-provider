@@ -64,6 +64,18 @@
         "version": "1.0.1"
     },
     {
+        "name": "board-score-hub",
+        "branch": "main",
+        "url": "https://github.com/cophilot/board-score-hub",
+        "homepage": "http://board-score-hub.philipp-bonin.com/",
+        "topics": [],
+        "stars": 0,
+        "description": null,
+        "logo_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo.png",
+        "version": ""
+    },
+    {
         "name": "cascoria",
         "branch": "main",
         "url": "https://github.com/cophilot/cascoria",
