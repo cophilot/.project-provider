@@ -68,9 +68,17 @@
         "branch": "main",
         "url": "https://github.com/cophilot/board-score-hub",
         "homepage": "http://board-score-hub.philipp-bonin.com/",
-        "topics": [],
+        "topics": [
+            "gh-pages",
+            "react",
+            "sass",
+            "typescript",
+            "web",
+            "webapp"
+        ],
         "stars": 0,
-        "description": null,
+        "description": "An collection of digitital score sheets for the most iconic board games.",
+        "description_de": "Eine Sammlung digitaler Wertungsbögen für die kultigsten Brettspiele.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo.png",
         "version": ""
