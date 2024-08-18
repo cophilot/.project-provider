@@ -12,7 +12,7 @@
             "template",
             "tool"
         ],
-        "stars": 0,
+        "stars": 1,
         "description": " A CLI tool to keep track of templates and generate files from them. ",
         "description_de": "Ein CLI-Tool zum Verfolgen von Vorlagen und zum Generieren von Dateien daraus.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
