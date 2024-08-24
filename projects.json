@@ -154,7 +154,16 @@
         "branch": "main",
         "url": "https://github.com/cophilot/FlowVisor",
         "homepage": "https://pypi.org/project/FlowVisor/",
-        "topics": [],
+        "topics": [
+            "benchmark",
+            "callgraph",
+            "graph",
+            "pip",
+            "pyp",
+            "python",
+            "python3",
+            "tool"
+        ],
         "stars": 0,
         "description": "Visualize the flow of your python code.",
         "description_de": "Visualisieren Sie den Fluss Ihres Python-Codes.",
