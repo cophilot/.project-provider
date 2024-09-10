@@ -193,6 +193,28 @@
         "version": ""
     },
     {
+        "name": "msh",
+        "branch": "main",
+        "url": "https://github.com/cophilot/msh",
+        "homepage": "",
+        "topics": [
+            "bash",
+            "cli",
+            "command-line",
+            "commands",
+            "compiler",
+            "linux",
+            "python",
+            "scrpit"
+        ],
+        "stars": 0,
+        "description": " A tool to manage your custom shell scripts. ",
+        "description_de": "Ein Tool zum Verwalten Ihrer benutzerdefinierten Shell-Skripte.",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
+        "version": "0.0.1"
+    },
+    {
         "name": "MyPortfolio",
         "branch": "master",
         "url": "https://github.com/cophilot/MyPortfolio",
