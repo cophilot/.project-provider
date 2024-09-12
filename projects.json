@@ -212,7 +212,7 @@
         "description_de": "Ein Tool zum Verwalten Ihrer benutzerdefinierten Shell-Skripte.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
-        "version": "0.0.1"
+        "version": "0.0.2"
     },
     {
         "name": "MyPortfolio",
