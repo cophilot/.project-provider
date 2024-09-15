@@ -43,6 +43,48 @@
         "version": ""
     },
     {
+        "name": "msh",
+        "branch": "main",
+        "url": "https://github.com/cophilot/msh",
+        "homepage": "",
+        "topics": [
+            "bash",
+            "cli",
+            "command-line",
+            "commands",
+            "compiler",
+            "linux",
+            "python",
+            "scrpit"
+        ],
+        "stars": 0,
+        "description": " A tool to manage your custom shell scripts. ",
+        "description_de": "Ein Tool zum Verwalten Ihrer benutzerdefinierten Shell-Skripte.",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
+        "version": "0.0.2"
+    },
+    {
+        "name": "board-score-hub",
+        "branch": "main",
+        "url": "https://github.com/cophilot/board-score-hub",
+        "homepage": "http://board-score-hub.philipp-bonin.com/",
+        "topics": [
+            "gh-pages",
+            "react",
+            "sass",
+            "typescript",
+            "web",
+            "webapp"
+        ],
+        "stars": 0,
+        "description": "An collection of digitital score sheets for the most iconic board games.",
+        "description_de": "Eine Sammlung digitaler Wertungsbögen für die kultigsten Brettspiele.",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo-red.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo-red.png",
+        "version": ""
+    },
+    {
         "name": ".project-provider",
         "branch": "main",
         "url": "https://github.com/cophilot/.project-provider",
@@ -62,26 +104,6 @@
         "logo_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo_small.png",
         "version": "1.0.1"
-    },
-    {
-        "name": "board-score-hub",
-        "branch": "main",
-        "url": "https://github.com/cophilot/board-score-hub",
-        "homepage": "http://board-score-hub.philipp-bonin.com/",
-        "topics": [
-            "gh-pages",
-            "react",
-            "sass",
-            "typescript",
-            "web",
-            "webapp"
-        ],
-        "stars": 0,
-        "description": "An collection of digitital score sheets for the most iconic board games.",
-        "description_de": "Eine Sammlung digitaler Wertungsbögen für die kultigsten Brettspiele.",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo.png",
-        "version": ""
     },
     {
         "name": "cascoria",
@@ -170,49 +192,6 @@
         "logo_url": "https://raw.githubusercontent.com/cophilot/FlowVisor/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/FlowVisor/main/assets/logo_small.png",
         "version": "0.3.2"
-    },
-    {
-        "name": "iScore",
-        "branch": "master",
-        "url": "https://github.com/cophilot/iScore",
-        "homepage": "http://iscore.philipp-bonin.com/",
-        "topics": [
-            "games",
-            "react",
-            "score",
-            "scoreboard",
-            "social-games",
-            "typescript",
-            "webapp"
-        ],
-        "stars": 0,
-        "description": "A simple score keeper app for your games.",
-        "description_de": "Eine einfache App zur Punktezählung für Ihre Spiele.",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/iScore/master/public/logo_small.png",
-        "version": ""
-    },
-    {
-        "name": "msh",
-        "branch": "main",
-        "url": "https://github.com/cophilot/msh",
-        "homepage": "",
-        "topics": [
-            "bash",
-            "cli",
-            "command-line",
-            "commands",
-            "compiler",
-            "linux",
-            "python",
-            "scrpit"
-        ],
-        "stars": 0,
-        "description": " A tool to manage your custom shell scripts. ",
-        "description_de": "Ein Tool zum Verwalten Ihrer benutzerdefinierten Shell-Skripte.",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
-        "version": "0.0.2"
     },
     {
         "name": "MyPortfolio",
