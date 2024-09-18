@@ -46,7 +46,7 @@
         "name": "msh",
         "branch": "main",
         "url": "https://github.com/cophilot/msh",
-        "homepage": "",
+        "homepage": "https://myshell.philipp-bonin.com/",
         "topics": [
             "bash",
             "cli",
@@ -58,7 +58,7 @@
             "scrpit"
         ],
         "stars": 0,
-        "description": " A tool to manage your custom shell scripts. ",
+        "description": "A tool to manage your custom shell scripts. ",
         "description_de": "Ein Tool zum Verwalten Ihrer benutzerdefinierten Shell-Skripte.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
@@ -232,28 +232,6 @@
         "description_de": "Hier gibt es nichts zu sehen, nur eine Social-Media-Site für Haustiere …",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo_small.png",
-        "version": ""
-    },
-    {
-        "name": "phil-online",
-        "branch": "master",
-        "url": "https://github.com/cophilot/phil-online",
-        "homepage": "http://philipp-bonin.com/",
-        "topics": [
-            "angular",
-            "css",
-            "html",
-            "html-css-javascript",
-            "javascript",
-            "personal-website",
-            "webapp",
-            "website"
-        ],
-        "stars": 0,
-        "description": "Personal Website",
-        "description_de": "Persönliche Website",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/phil-online/master/src/assets/logoPhilOnline.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-online/master/src/assets/logoPhilOnline.png",
         "version": ""
     },
     {
