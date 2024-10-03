@@ -58,11 +58,11 @@
             "scrpit"
         ],
         "stars": 0,
-        "description": "A tool to manage your custom shell scripts. ",
-        "description_de": "Ein Tool zum Verwalten Ihrer benutzerdefinierten Shell-Skripte.",
+        "description": "A CLI tool to manage custom scripts.",
+        "description_de": "Ein CLI-Tool zum Verwalten benutzerdefinierter Skripts.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
-        "version": "0.0.5"
+        "version": "0.1.0"
     },
     {
         "name": "board-score-hub",
