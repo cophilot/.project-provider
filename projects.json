@@ -194,26 +194,6 @@
         "version": "0.3.2"
     },
     {
-        "name": "MyPortfolio",
-        "branch": "master",
-        "url": "https://github.com/cophilot/MyPortfolio",
-        "homepage": "http://portfolio.philipp-bonin.com/",
-        "topics": [
-            "angular",
-            "angular17",
-            "scss",
-            "typescript",
-            "web",
-            "webapp"
-        ],
-        "stars": 0,
-        "description": "A portfolio website for my projects",
-        "description_de": "Eine Portfolio-Website für meine Projekte",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/MyPortfolio/master/src/assets/logo_big.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/MyPortfolio/master/src/assets/logo.png",
-        "version": ""
-    },
-    {
         "name": "Petgram",
         "branch": "master",
         "url": "https://github.com/cophilot/Petgram",
