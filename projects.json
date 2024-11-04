@@ -62,7 +62,7 @@
         "description_de": "Ein CLI-Tool zum Verwalten benutzerdefinierter Skripts.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
-        "version": "0.1.0"
+        "version": "0.2.0"
     },
     {
         "name": "board-score-hub",
