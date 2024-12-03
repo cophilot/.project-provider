@@ -20,6 +20,27 @@
         "version": "1.0.0"
     },
     {
+        "name": "rocket-engine-xplorer",
+        "branch": "main",
+        "url": "https://github.com/cophilot/rocket-engine-xplorer",
+        "homepage": "http://rex.philipp-bonin.com/",
+        "topics": [
+            "mechanical-engineering",
+            "rocket-engine",
+            "rocket-science",
+            "svelte",
+            "typescript",
+            "web",
+            "website"
+        ],
+        "stars": 0,
+        "description": "Explore your favorite rocket engines and compare them.",
+        "description_de": "Entdecken Sie Ihre bevorzugten Raketentriebwerke und vergleichen Sie sie.",
+        "logo_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo.png",
+        "version": ""
+    },
+    {
         "name": "OrbitLab",
         "branch": "master",
         "url": "https://github.com/cophilot/OrbitLab",
@@ -236,25 +257,5 @@
         "logo_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "version": ""
-    },
-    {
-        "name": "VSToolKit",
-        "branch": "main",
-        "url": "https://github.com/cophilot/VSToolKit",
-        "homepage": "https://marketplace.visualstudio.com/items?itemName=PhilippBo.vstoolkit",
-        "topics": [
-            "devops",
-            "extension",
-            "javascript",
-            "tools",
-            "vscode",
-            "vscode-extension"
-        ],
-        "stars": 0,
-        "description": "Providing tools for Visual Studio Code. ",
-        "description_de": "Bereitstellung von Tools für Visual Studio Code.",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/VSToolKit/main/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/VSToolKit/main/assets/logo.png",
-        "version": "1.1.0"
     }
 ]
