@@ -37,7 +37,7 @@
         "description": "Explore your favorite rocket engines and compare them.",
         "description_de": "Entdecken Sie Ihre bevorzugten Raketentriebwerke und vergleichen Sie sie.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo.png",
+        "logo_small_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo_small.png",
         "version": ""
     },
     {
