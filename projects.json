@@ -99,8 +99,8 @@
             "webapp"
         ],
         "stars": 0,
-        "description": "An collection of digitital score sheets for the most iconic board games.",
-        "description_de": "Eine Sammlung digitaler Wertungsbögen für die kultigsten Brettspiele.",
+        "description": "A collection of digitital score sheets for a broad variety of board games.",
+        "description_de": "Eine Sammlung digitaler Punkteblätter für eine große Auswahl an Brettspielen.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo-red.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo-red.png",
         "version": ""
