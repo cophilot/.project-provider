@@ -127,28 +127,6 @@
         "version": "1.0.1"
     },
     {
-        "name": "cascoria",
-        "branch": "main",
-        "url": "https://github.com/cophilot/cascoria",
-        "homepage": "http://cascoria.philipp-bonin.com/",
-        "topics": [
-            "eslint",
-            "prettier",
-            "sass",
-            "vite",
-            "vue",
-            "vue3",
-            "webapp",
-            "website"
-        ],
-        "stars": 0,
-        "description": "A score keeping app for the board game Cascadia",
-        "description_de": "Eine App zur Punktezählung für das Brettspiel Cascadia",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/cascoria/main/src/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/cascoria/main/src/assets/logo.png",
-        "version": ""
-    },
-    {
         "name": "Color-Chicken",
         "branch": "master",
         "url": "https://github.com/cophilot/Color-Chicken",
