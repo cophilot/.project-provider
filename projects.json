@@ -13,11 +13,11 @@
             "tool"
         ],
         "stars": 2,
-        "description": " A CLI tool to keep track of templates and generate files from them. ",
-        "description_de": "Ein CLI-Tool zum Verfolgen von Vorlagen und zum Generieren von Dateien daraus.",
+        "description": " A CLI tool to keep track of templates for your projects. ",
+        "description_de": "Ein CLI-Tool, um den Überblick über Vorlagen für Ihre Projekte zu behalten.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
-        "version": "1.0.0"
+        "version": "2.0.0"
     },
     {
         "name": "rocket-engine-xplorer",
