@@ -14,7 +14,7 @@
         ],
         "stars": 2,
         "description": " A CLI tool to keep track of templates for your projects. ",
-        "description_de": "Ein CLI-Tool, um den Überblick über Vorlagen für Ihre Projekte zu behalten.",
+        "description_de": "Ein CLI-Tool zum Verfolgen von Vorlagen für Ihre Projekte.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "version": "2.0.0"
