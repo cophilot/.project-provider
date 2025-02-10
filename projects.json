@@ -14,7 +14,7 @@
         ],
         "stars": 2,
         "description": " A CLI tool to keep track of templates for your projects. ",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Ein CLI -Tool, um Vorlagen für Ihre Projekte zu verfolgen.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "version": "2.0.0"
@@ -35,7 +35,7 @@
         ],
         "stars": 0,
         "description": "Explore your favorite rocket engines and compare them.",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Entdecken Sie Ihre Lieblings -Raketenmotoren und vergleichen Sie sie.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/rocket-engine-xplorer/main/src/lib/images/logo_small.png",
         "version": ""
@@ -58,7 +58,7 @@
         ],
         "stars": 0,
         "description": "A webapplication to simulate orbits on a very basic level.",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Eine Webapplikation zum Simulieren von Bahnen auf einer sehr grundlegenden Ebene.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
@@ -80,7 +80,7 @@
         ],
         "stars": 0,
         "description": "A CLI tool to manage custom scripts.",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Ein CLI -Tool zum Verwalten benutzerdefinierter Skripte.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/msh/main/assets/logo.png",
         "version": "1.0.1"
@@ -100,7 +100,7 @@
         ],
         "stars": 0,
         "description": "A collection of digitital score sheets for a broad variety of board games.",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Eine Sammlung digitaler Score -Blätter für eine Vielzahl von Brettspielen.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo-red.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/board-score-hub/main/src/assets/logo-red.png",
         "version": ""
@@ -121,7 +121,7 @@
         ],
         "stars": 0,
         "description": " Project management tool for your Github projects",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Projektmanagement -Tool für Ihre GitHub -Projekte",
         "logo_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/.project-provider/main/assets/logo_small.png",
         "version": "1.0.1"
@@ -143,7 +143,7 @@
         ],
         "stars": 0,
         "description": "Be a feathered chameleon, master the hurdles in Color Chicken!",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Seien Sie ein gefiedertes Chamäleon, beherrschen Sie die Hürden in Farbe Hühnchen!",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo_text.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Color-Chicken/master/src/assets/logo.png",
         "version": ""
@@ -165,7 +165,7 @@
         ],
         "stars": 0,
         "description": "A simple CV builder for developers.",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Ein einfacher Lebenslaufbauer für Entwickler.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/DevCv/main/src/assets/logo.png",
         "version": ""
@@ -208,7 +208,7 @@
         ],
         "stars": 0,
         "description": "Nothing to see here, just a social media site for pets...",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Hier nichts zu sehen, nur eine Social -Media -Website für Haustiere ...",
         "logo_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/Petgram/master/src/assets/img/logo_small.png",
         "version": ""
@@ -231,7 +231,7 @@
         ],
         "stars": 0,
         "description": "A shell like personal website ",
-        "description_de": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+        "description_de": "Eine Shell -ähnliche persönliche Website",
         "logo_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/phil-shell/master/src/assets/logo.png",
         "version": ""
