@@ -1,25 +1,5 @@
 [
     {
-        "name": "templify",
-        "branch": "master",
-        "url": "https://github.com/cophilot/templify",
-        "homepage": "https://templify.philipp-bonin.com",
-        "topics": [
-            "cli",
-            "cli-tool",
-            "project-management",
-            "rust",
-            "template",
-            "tool"
-        ],
-        "stars": 2,
-        "description": " A CLI tool to keep track of templates for your projects. ",
-        "description_de": "Ein CLI -Tool, um Vorlagen für Ihre Projekte zu verfolgen.",
-        "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
-        "logo_small_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
-        "version": "2.0.0"
-    },
-    {
         "name": "rocket-engine-xplorer",
         "branch": "main",
         "url": "https://github.com/cophilot/rocket-engine-xplorer",
