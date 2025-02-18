@@ -57,8 +57,10 @@ def main():
     log("by Philipp B.", False)
     sys.exit(0)
 
+
 def push():
     os.system("sh push.sh")
+
 
 def log_props():
     log("---")
@@ -85,47 +87,47 @@ def set_args():
     conf_file = ""
     for i in range(len(sys.argv)):
         arg = sys.argv[i].lower()
-        if (arg == "-name" or arg == "-n") and i+1 < len(sys.argv):
+        if (arg == "-name" or arg == "-n") and i + 1 < len(sys.argv):
             global GITHUB_NAME
-            GITHUB_NAME = sys.argv[i+1]
-        if (arg == "-banner") and i+1 < len(sys.argv):
+            GITHUB_NAME = sys.argv[i + 1]
+        if (arg == "-banner") and i + 1 < len(sys.argv):
             global BANNER_PATH
-            BANNER_PATH = sys.argv[i+1]
-        elif (arg == "-output" or arg == "-o") and i+1 < len(sys.argv):
+            BANNER_PATH = sys.argv[i + 1]
+        elif (arg == "-output" or arg == "-o") and i + 1 < len(sys.argv):
             global OUTPUT_FILE
-            OUTPUT_FILE = sys.argv[i+1]
-        elif (arg == "-files" or arg == "-f") and i+1 < len(sys.argv):
+            OUTPUT_FILE = sys.argv[i + 1]
+        elif (arg == "-files" or arg == "-f") and i + 1 < len(sys.argv):
             global PROJECT_META_FILES
-            PROJECT_META_FILES = sys.argv[i+1].split(",")
-        elif (arg == "-read" or arg == "-r") and i+1 < len(sys.argv):
-            conf_file = sys.argv[i+1]
-        elif (arg == "-logfile" or arg == "-lf") and i+1 < len(sys.argv):
+            PROJECT_META_FILES = sys.argv[i + 1].split(",")
+        elif (arg == "-read" or arg == "-r") and i + 1 < len(sys.argv):
+            conf_file = sys.argv[i + 1]
+        elif (arg == "-logfile" or arg == "-lf") and i + 1 < len(sys.argv):
             global LOG_FILE
-            LOG_FILE = sys.argv[i+1]
-        elif (arg == "-loglength" or arg == "-ll") and i+1 < len(sys.argv):
+            LOG_FILE = sys.argv[i + 1]
+        elif (arg == "-loglength" or arg == "-ll") and i + 1 < len(sys.argv):
             global LOG_LENGTH
             try:
-                LOG_LENGTH = int(sys.argv[i+1])
+                LOG_LENGTH = int(sys.argv[i + 1])
             except Exception:
                 print("Error: Log length must be an integer!")
                 sys.exit(1)
-        elif (arg == "-quiet" or arg == "-q"):
+        elif arg == "-quiet" or arg == "-q":
             global QUIETLY
             QUIETLY = True
-        elif (arg == "-dev" ):
+        elif arg == "-dev":
             global DEV_MODE
             DEV_MODE = True
-        elif (arg == "-force" ):
+        elif arg == "-force":
             global FORCE
             FORCE = True
-        elif (arg == "-timestamp" or arg == "-ts") and i+1 < len(sys.argv):
+        elif (arg == "-timestamp" or arg == "-ts") and i + 1 < len(sys.argv):
             global TIMESTAMP_FILE
-            TIMESTAMP_FILE = sys.argv[i+1]
-        elif (arg == "-help" or arg == "-h"):
+            TIMESTAMP_FILE = sys.argv[i + 1]
+        elif arg == "-help" or arg == "-h":
             print_intro(False)
             print_help()
             sys.exit(0)
-        elif (arg == "-version" or arg == "-v"):
+        elif arg == "-version" or arg == "-v":
             print_intro(False)
             print(f"Version: {VERSION}")
             sys.exit(0)
@@ -180,7 +182,6 @@ def set_args():
         OUTPUT_FILE = os.path.join("dev", OUTPUT_FILE)
         LOG_FILE = os.path.join("dev", LOG_FILE)
         TIMESTAMP_FILE = os.path.join("dev", TIMESTAMP_FILE)
-        
 
 
 def create_project_dict(repo, meta_data):
@@ -201,33 +202,48 @@ def create_project_dict(repo, meta_data):
     else:
         log(f"Project {name} has no meta data")
 
-    if meta_data.get("description_translate") and repo["description"] != "" and repo["description"] is not None:
+    if (
+        meta_data.get("description_translate")
+        and repo["description"] != ""
+        and repo["description"] is not None
+    ):
         translate_list = meta_data.get("description_translate").split(",")
         for to in translate_list:
             try:
                 project["description_" + to] = GoogleTranslator(
-                    source='auto', target=to).translate(repo["description"])
+                    source="auto", target=to
+                ).translate(repo["description"])
             except Exception:
                 log(f"Could not translate description to {to}")
                 project["description_" + to] = ""
-    elif meta_data.get("translate_description") and repo["description"] != "" and repo["description"] is not None:
+    elif (
+        meta_data.get("translate_description")
+        and repo["description"] != ""
+        and repo["description"] is not None
+    ):
         translate_list = meta_data.get("translate_description").split(",")
         for to in translate_list:
             try:
                 project["description_" + to] = GoogleTranslator(
-                    source='auto', target=to).translate(repo["description"])
+                    source="auto", target=to
+                ).translate(repo["description"])
             except Exception:
                 log(f"Could not translate description to {to}")
                 project["description_" + to] = ""
 
     if meta_data.get("logo"):
-        project["logo_url"] = f"https://raw.githubusercontent.com/{GITHUB_NAME}/{name}/{branch}/" + meta_data["logo"]
+        project["logo_url"] = (
+            f"https://raw.githubusercontent.com/{GITHUB_NAME}/{name}/{branch}/"
+            + meta_data["logo"]
+        )
     else:
         project["logo_url"] = ""
 
     if meta_data.get("logo_small"):
-        project["logo_small_url"] = f"https://raw.githubusercontent.com/{GITHUB_NAME}/{name}/{branch}/" + \
-            meta_data["logo_small"]
+        project["logo_small_url"] = (
+            f"https://raw.githubusercontent.com/{GITHUB_NAME}/{name}/{branch}/"
+            + meta_data["logo_small"]
+        )
     else:
         project["logo_small_url"] = ""
 
@@ -244,6 +260,7 @@ def create_project_dict(repo, meta_data):
         log(f"Ignoring project {name}")
     log()
 
+
 def has_changes():
     old_Projects = []
     if not os.path.isfile(OUTPUT_FILE):
@@ -258,7 +275,7 @@ def has_changes():
         if not project in old_Projects:
             return True
     return False
-        
+
 
 def convert_conf_file(txt):
     data = {}
@@ -291,7 +308,8 @@ def get_project_file(repo):
 
 def get_github_repos():
     response = requests.get(
-        f"https://api.github.com/users/{GITHUB_NAME}/repos")
+        f"https://api.github.com/users/{GITHUB_NAME}/repos?per_page=50"
+    )
     if response.status_code != 200:
         print("Error: Could not get repos from github!")
         sys.exit(1)
@@ -303,8 +321,8 @@ def save_projects():
     log(f"Saving {len(projects)} projects to {OUTPUT_FILE}...")
     if not os.path.isfile(OUTPUT_FILE):
         os.makedirs(os.path.dirname(OUTPUT_FILE), exist_ok=True)
-        
-    with open(OUTPUT_FILE, "w", encoding='utf8') as outfile:
+
+    with open(OUTPUT_FILE, "w", encoding="utf8") as outfile:
         json.dump(projects, outfile, indent=4, ensure_ascii=False)
     log("Done!", False)
 
@@ -349,6 +367,7 @@ def log(txt="", to_file=True):
             while len(log_lines) > LOG_LENGTH:
                 log_lines.pop(0)
 
+
 def generate_banner(projects):
     if BANNER_PATH == "":
         return
@@ -357,6 +376,7 @@ def generate_banner(projects):
     bg.generate_images(projects)
     bg.save()
     log("Banner saved to " + BANNER_PATH)
+
 
 def print_help():
     print("Usage: python main.py [flags]")
@@ -371,20 +391,24 @@ def print_help():
     print("  -force                         Execute even if there are no changes")
     print("  -help, -h                      Print this help")
     print("  -version, -v                   Print the version number")
-    print("  -banner <path-to-file>         Generate a banner from the projects in the file")
+    print(
+        "  -banner <path-to-file>         Generate a banner from the projects in the file"
+    )
     print("  -dev                           Run in dev mode")
 
 
 def print_intro(note_quietly=True):
     if note_quietly and QUIETLY:
         return
-    print("""
+    print(
+        """
           
           *************************
           *** .project-provider ***
           *************************
           
-          """)
+          """
+    )
 
 
 if __name__ == "__main__":
