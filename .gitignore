@@ -6,3 +6,4 @@ banners
 test.py
 src/__pycache__
 /dev
+.venv
