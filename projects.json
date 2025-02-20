@@ -17,7 +17,7 @@
         "description_de": "Ein CLI -Tool, um Vorlagen für Ihre Projekte zu verfolgen.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
-        "version": "2.0.0"
+        "version": "2.0.1"
     },
     {
         "name": "rocket-engine-xplorer",
