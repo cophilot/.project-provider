@@ -12,7 +12,7 @@
             "template",
             "tool"
         ],
-        "stars": 2,
+        "stars": 3,
         "description": " A CLI tool to keep track of templates for your projects. ",
         "description_de": "Ein CLI -Tool, um Vorlagen für Ihre Projekte zu verfolgen.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/templify/master/assets/logo.png",
