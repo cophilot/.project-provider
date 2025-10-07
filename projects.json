@@ -58,7 +58,7 @@
         ],
         "stars": 0,
         "description": "A webapplication to simulate orbits on a very basic level.",
-        "description_de": "Eine Webapplikation zum Simulieren von Bahnen auf einer sehr grundlegenden Ebene.",
+        "description_de": "Eine Webanwendung zur Simulation von Umlaufbahnen auf einem sehr einfachen Niveau.",
         "logo_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo.png",
         "logo_small_url": "https://raw.githubusercontent.com/cophilot/OrbitLab/master/src/assets/logo_small.png",
         "version": ""
